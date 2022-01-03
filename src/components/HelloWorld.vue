@@ -76,11 +76,11 @@
       />
     </div>
     <div>
-      <ul>
-        <li v-for="user in users">
-          <p>{{ user.response.city }}</p>
-        </li>
-      </ul>   
+     <ul class="">
+          <li v-for="user in users" :key="user.n">
+            {{ user.name }} 
+          </li>
+        </ul>  
     </div>
   </div>
 </template>
@@ -91,7 +91,8 @@ export default {
   
   data: function() {
     return {
-      uname: ""
+      uname: "",
+      users: {}
     }
   },
   methods: {
