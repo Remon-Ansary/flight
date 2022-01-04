@@ -109,10 +109,10 @@
                       <div class="">
                         <!-- <button type="button" class="btn btn-info">Info</button> -->
                         <span>Departing on</span>
-                        <span>Departing on</span>
+                        <span>{{dates.in}}</span>
                         <hr />
                         <span>Returning on</span>
-                        <span>Returning on</span>
+                        <span>{{dates.out}}</span>
                       </div>
                     </div>
                     <div class="col-md-3" style="border-style: outset;">
@@ -280,7 +280,6 @@
                 <div class="md-form mb-5">
                   <HotelDatePicker> </HotelDatePicker>
                   <HotelDatePicker
-                  
                     @check-in-changed="checkIn"
                     @check-out-changed="checkOut"
                   />
@@ -306,8 +305,10 @@
 import axios from "axios";
 import HotelDatePicker from "vue-hotel-datepicker";
 import "vue-hotel-datepicker/dist/vueHotelDatepicker.css";
-
+var startDate;
+var endDate;
 export default {
+
   components: {
     HotelDatePicker
   },
@@ -318,7 +319,8 @@ export default {
       destinationName: "",
       city: "",
       city1: "",
-      iata:"",
+      iata: "",
+      
       leaves: [],
       destinations: [],
       dates: {
@@ -373,11 +375,13 @@ export default {
       this.destinations = [];
     },
     checkIn(val) {
-      console.log(val.toLocaleString().slice(0,10));
-      this.dates.in = val;
+     this.dates.in = val.toString().slice(4,16);
+      console.log(val.toString().slice(4,16));
+      
     },
     checkOut(val) {
-      console.log(val.toLocaleString().slice(0,10));
+    this.dates.out = val.toString().slice(4,16);
+      console.log(endDate);
 
       this.dates.out = val;
     }
