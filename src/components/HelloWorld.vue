@@ -81,9 +81,9 @@
                         style="background-color: rgb(255, 255, 255); height: 154px"
                       >
                         <p>Leaving from</p>
-                      
-
+                    
                         <span >{{leaveName}} </span>
+                        <span >{{city}} </span>
                       </div>
                     </div>
                      
@@ -193,6 +193,7 @@
               </div>
               <div class="modal-body mx-3">
                 <div class="md-form mb-5">
+                
                   <input
                     type="text"
                     v-model="leaveName"
@@ -271,7 +272,7 @@
               <div class="modal-body mx-3">
                 <div class="md-form mb-5">
                   <HotelDatePicker >
-                 <h1>{{startDate}}</h1>
+               {{startDate}}
                   </HotelDatePicker>
                 </div>
               </div>
@@ -300,8 +301,8 @@ export default {
   data: function() {
     return {
       leaveName: "",
-      leaves: {},
-      
+      city:"",
+      leaves: {},    
     };
   },
   methods: {
@@ -323,7 +324,9 @@ export default {
     setState(leave) {
       console.log(leave);
       this.leaveName = leave.name;
+      this.city = leave.city;
       console.log(leave.name);
+
     }
   }
  
