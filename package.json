@@ -17,7 +17,9 @@
     "axios": "^0.24.0",
     "lodash": "^4.17.21",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-hotel-datepicker": "^4.5.1",
+    "vue-router": "^3.0.1",
+    "vue-simple-suggest": "^1.11.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

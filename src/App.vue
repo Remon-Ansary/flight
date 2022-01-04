@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="remon">
     <router-view />
   </div>
 </template>
@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style>
-#app {
+#remon {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
