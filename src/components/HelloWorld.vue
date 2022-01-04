@@ -81,11 +81,12 @@
                         style="background-color: rgb(255, 255, 255); height: 154px"
                       >
                         <p>Leaving from</p>
-                        <p>Leaving</p>
-                        <span>Leaving from</span>
+                      
+
+                        <span >{{leaveName}} </span>
                       </div>
                     </div>
-
+                     
                     <div
                       data-toggle="modal"
                       data-target="#modalLoginForm"
@@ -194,7 +195,7 @@
                 <div class="md-form mb-5">
                   <input
                     type="text"
-                    v-model="uname"
+                    v-model="leaveName"
                     @input="getUser"
                     id="defaultForm-email"
                     class="form-control validate"
@@ -205,6 +206,7 @@
                     data-success="right"
                     for="defaultForm-email"
                     >Leaving from
+                    
                   </label>
                 </div>
 
@@ -226,11 +228,11 @@
                 <div>
                   <!-- Filter by input text to only show the matching results -->
 
-                  <div v-for="user in users">
-                    <div v-if="users.length > 0">
-                      <div class="p-2" :key="user.id">
-                        <p @click="setState(user)">
-                          {{ user.city }} - {{ user.name }}
+                  <div v-for="leave in leaves">
+                    <div v-if="leaves.length > 0">
+                      <div class="p-2" :key="leave.id">
+                        <p @click="setState(leave)">
+                          {{ leave.city }} - {{ leave.name }}
                         </p>
                       </div>
                     </div>
@@ -268,7 +270,9 @@
               </div>
               <div class="modal-body mx-3">
                 <div class="md-form mb-5">
-                  <HotelDatePicker />
+                  <HotelDatePicker >
+                 <h1>{{startDate}}</h1>
+                  </HotelDatePicker>
                 </div>
               </div>
               <div class="modal-footer d-flex justify-content-center">
@@ -295,33 +299,34 @@ export default {
 
   data: function() {
     return {
-      uname: "",
-      users: {},
-      selected: {}
+      leaveName: "",
+      leaves: {},
+      
     };
   },
   methods: {
     getUser() {
-      console.log(this.uname);
+      console.log(this.leaveName);
       axios
         .get(
           "https://api.sharetrip.net/api/v1/flight/search/airport?name=" +
-            this.uname
+            this.leaveName
         )
         .then(res => {
           console.log(res.data);
-          this.users = res.data.response;
+          this.leaves = res.data.response;
         })
         .catch(err => {
           console.log(err);
         });
     },
-    setState(user) {
-      console.log(user);
-      this.uname = user.name;
-      console.log(user.name);
+    setState(leave) {
+      console.log(leave);
+      this.leaveName = leave.name;
+      console.log(leave.name);
     }
   }
+ 
 };
 </script>
 
