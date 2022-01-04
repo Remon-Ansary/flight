@@ -81,12 +81,12 @@
                         style="background-color: rgb(255, 255, 255); height: 154px"
                       >
                         <p>Leaving from</p>
-                    
-                        <span >{{leaveName}} </span>
-                        <span >{{city}} </span>
+
+                        <span>{{ iata }} </span>
+                        <span>{{ city }} </span>
                       </div>
                     </div>
-                     
+
                     <div
                       data-toggle="modal"
                       data-target="#modalLoginForm"
@@ -95,7 +95,7 @@
                     >
                       <div>
                         <p>Going to</p>
-                        <p>{{destinationName}}</p>
+                        <p>{{ destinationName }}</p>
                         <span>Leaving from</span>
                       </div>
                     </div>
@@ -193,7 +193,6 @@
               </div>
               <div class="modal-body mx-3">
                 <div class="md-form mb-5">
-                
                   <input
                     type="text"
                     v-model="leaveName"
@@ -207,7 +206,6 @@
                     data-success="right"
                     for="defaultForm-email"
                     >Leaving from
-                    
                   </label>
                 </div>
 
@@ -280,9 +278,16 @@
               </div>
               <div class="modal-body mx-3">
                 <div class="md-form mb-5">
-                  <HotelDatePicker >
-               {{startDate}}
-                  </HotelDatePicker>
+                  <HotelDatePicker> </HotelDatePicker>
+                  <HotelDatePicker
+                  
+                    @check-in-changed="checkIn"
+                    @check-out-changed="checkOut"
+                  />
+                  <h3>CheckIn:</h3>
+                  <pre>{{ dates.in }}</pre>
+                  <h3>CheckOut:</h3>
+                  <pre>{{ dates.out }}</pre>
                 </div>
               </div>
               <div class="modal-footer d-flex justify-content-center">
@@ -311,10 +316,15 @@ export default {
     return {
       leaveName: "",
       destinationName: "",
-      city:"",
-      city1:"",
-      leaves: [],  
-      destinations: [],  
+      city: "",
+      city1: "",
+      iata:"",
+      leaves: [],
+      destinations: [],
+      dates: {
+        in: null,
+        out: null
+      }
     };
   },
   methods: {
@@ -351,20 +361,27 @@ export default {
       console.log(leave);
       this.leaveName = leave.name;
       this.city = leave.city;
+      this.iata = leave.iata;
       console.log(leave.name);
       this.leaves = [];
-
     },
-     setDestination(destination) {
+    setDestination(destination) {
       console.log(destination);
       this.destinationName = destination.name;
       this.city1 = destination.city;
       console.log(destination.name);
-      this.destinations =[];
+      this.destinations = [];
+    },
+    checkIn(val) {
+      console.log(val.toISOString().slice(0,10));
+      this.dates.in = val;
+    },
+    checkOut(val) {
+      console.log(val.toISOString().slice(0,10));
 
+      this.dates.out = val;
     }
   }
- 
 };
 </script>
 
