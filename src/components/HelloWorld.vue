@@ -373,11 +373,11 @@ export default {
       this.destinations = [];
     },
     checkIn(val) {
-      console.log(val.toISOString().slice(0,10));
+      console.log(val.toLocaleString().slice(0,10));
       this.dates.in = val;
     },
     checkOut(val) {
-      console.log(val.toISOString().slice(0,10));
+      console.log(val.toLocaleString().slice(0,10));
 
       this.dates.out = val;
     }
