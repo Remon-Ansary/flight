@@ -95,7 +95,7 @@
                     >
                       <div>
                         <p>Going to</p>
-                        <p>Leaving</p>
+                        <p>{{destinationName}}</p>
                         <span>Leaving from</span>
                       </div>
                     </div>
@@ -214,8 +214,8 @@
                 <div class="md-form mb-4">
                   <input
                     type="text"
-                    v-model="uname"
-                    @input="getUser"
+                    v-model="destinationName"
+                    @input="getDestination"
                     id="defaultForm-email"
                     class="form-control validate"
                   />
@@ -234,6 +234,15 @@
                       <div class="p-2" :key="leave.id">
                         <p @click="setState(leave)">
                           {{ leave.city }} - {{ leave.name }}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div v-for="destination in destinations">
+                    <div v-if="destinations.length > 0">
+                      <div class="p-2" :key="destination.id">
+                        <p @click="setDestination(destination)">
+                          {{ destination.city1 }} - {{ destination.name }}
                         </p>
                       </div>
                     </div>
@@ -301,8 +310,11 @@ export default {
   data: function() {
     return {
       leaveName: "",
+      destinationName: "",
       city:"",
-      leaves: {},    
+      city1:"",
+      leaves: [],  
+      destinations: [],  
     };
   },
   methods: {
@@ -321,11 +333,34 @@ export default {
           console.log(err);
         });
     },
+    getDestination() {
+      axios
+        .get(
+          "https://api.sharetrip.net/api/v1/flight/search/airport?name=" +
+            this.destinationName
+        )
+        .then(res => {
+          console.log(res.data);
+          this.destinations = res.data.response;
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    },
     setState(leave) {
       console.log(leave);
       this.leaveName = leave.name;
       this.city = leave.city;
       console.log(leave.name);
+      this.leaves = [];
+
+    },
+     setDestination(destination) {
+      console.log(destination);
+      this.destinationName = destination.name;
+      this.city1 = destination.city;
+      console.log(destination.name);
+      this.destinations =[];
 
     }
   }
