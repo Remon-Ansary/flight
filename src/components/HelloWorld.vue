@@ -206,8 +206,8 @@
                     </div>
                     <div>
                       <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
-                        width="30px"
+                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        width="40px"
                       />
                     </div>
                   </div>
@@ -240,8 +240,8 @@
                     </div>
                     <div>
                       <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
-                        width="30px"
+                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        width="40px"
                       />
                     </div>
                   </div>
@@ -273,8 +273,8 @@
                     </div>
                     <div>
                       <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
-                        width="30px"
+                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        width="40px"
                       />
                     </div>
                   </div>
@@ -307,8 +307,8 @@
                     </div>
                     <div>
                       <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
-                        width="30px"
+                       src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        width="40px"
                       />
                     </div>
                   </div>
@@ -363,8 +363,8 @@
                     </div>
                     <div>
                       <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
-                        width="30px"
+                         src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        width="40px"
                       />
                     </div>
                   </div>
@@ -397,8 +397,8 @@
                     </div>
                     <div>
                       <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
-                        width="30px"
+                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        width="40px"
                       />
                     </div>
                   </div>
@@ -430,8 +430,8 @@
                     </div>
                     <div>
                       <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
-                        width="30px"
+                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        width="40px"
                       />
                     </div>
                   </div>
@@ -464,8 +464,8 @@
                     </div>
                     <div>
                       <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
-                        width="30px"
+                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        width="40px"
                       />
                     </div>
                   </div>
@@ -693,10 +693,10 @@ export default {
       leaveName: "",
       destinationName: "",
       cityName: "China",
-      city: "Dhaka",
-      city1: "China",
-      iata: "DAC",
-      iata1: "DEX",
+      city: "Departure",
+      city1: "Destination",
+      iata: "Select",
+      iata1: "Select",
       hours: "",
       temp1:"13.05",
       temp2:"15.01",
