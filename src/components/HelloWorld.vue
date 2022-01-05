@@ -116,6 +116,320 @@
             </div>
         </div>
     </div>
+   <!-- weather data -->
+   <div class="row"> 
+    <div class="col-md-6">
+    <section class="" style="background-color: rgb(242, 242, 242)">
+      <div class="container py-5 ">
+        <div class="row d-flex justify-content-left align-items-center h-100">
+          <div class="row">
+            <div class="wrapper">
+              <div class="typing-demo">Weather data in <b>Dhaka</b></div>
+            </div>
+            <br />
+            <!-- hello -->
+            <div class="row">
+              <div class="col-md-4">
+              
+              </div>
+            </div>
+
+            <!-- card1 -->
+            <div class="col-md-3  pb-2">
+              <div class="card" style="color: #000000; border-radius: 30px">
+                <div class="card-body ">
+                  <div class="d-flex">
+                    <p class="flex-grow-1">Warsaw</p>               
+                  </div>
+                  <div class="d-flex flex-column text-center mt-5 mb-4">
+                    <p
+                      class="display-8 mb-0 font-weight-bold "
+                      style="color: #1c2331"
+                    >
+                      13°C
+                    </p>          
+                    <span class="small" style="color: #868b94">Stormy</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="flex-grow-1" style="font-size: 1rem">          
+                      <div>
+                        <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
+                        <span class="ms-1"> 84% </span>
+                      </div>   
+                    </div>
+                    <div>
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
+                        width="30px"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card2 -->
+              <div class="col-md-3  pb-2">
+              <div class="card" style="color: #000000; border-radius: 30px">
+                <div class="card-body ">
+                  <div class="d-flex">
+                    <p class="flex-grow-1">Warsaw</p>               
+                  </div>
+                  <div class="d-flex flex-column text-center mt-5 mb-4">
+                    <p
+                      class="display-8 mb-0 font-weight-bold "
+                      style="color: #1c2331"
+                    >
+                      13°C
+                    </p>          
+                    <span class="small" style="color: #868b94">Stormy</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="flex-grow-1" style="font-size: 1rem">          
+                      <div>
+                        <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
+                        <span class="ms-1"> 84% </span>
+                      </div>   
+                    </div>
+                    <div>
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
+                        width="30px"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card3 -->
+               <div class="col-md-3  pb-2">
+              <div class="card" style="color: #000000; border-radius: 30px">
+                <div class="card-body ">
+                  <div class="d-flex">
+                    <p class="flex-grow-1">Warsaw</p>               
+                  </div>
+                  <div class="d-flex flex-column text-center mt-5 mb-4">
+                    <p
+                      class="display-8 mb-0 font-weight-bold "
+                      style="color: #1c2331"
+                    >
+                      13°C
+                    </p>          
+                    <span class="small" style="color: #868b94">Stormy</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="flex-grow-1" style="font-size: 1rem">          
+                      <div>
+                        <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
+                        <span class="ms-1"> 84% </span>
+                      </div>   
+                    </div>
+                    <div>
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
+                        width="30px"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card4 -->
+            <div class="col-md-3  pb-2">
+              <div class="card" style="color: #000000; border-radius: 30px">
+                <div class="card-body ">
+                  <div class="d-flex">
+                    <p class="flex-grow-1">Warsaw</p>               
+                  </div>
+                  <div class="d-flex flex-column text-center mt-5 mb-4">
+                    <p
+                      class="display-8 mb-0 font-weight-bold "
+                      style="color: #1c2331"
+                    >
+                      13°C
+                    </p>          
+                    <span class="small" style="color: #868b94">Stormy</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="flex-grow-1" style="font-size: 1rem">          
+                      <div>
+                        <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
+                        <span class="ms-1"> 84% </span>
+                      </div>   
+                    </div>
+                    <div>
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
+                        width="30px"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+    <div class="col-md-6"> 
+     <section class="" style="background-color: rgb(242, 242, 242)">
+      <div class="container py-5 ">
+        <div class="row d-flex justify-content-left align-items-center h-100">
+          <div class="row">
+            <div class="wrapper">
+              <div class="typing-demo">Weather data in <b>Dhaka</b></div>
+            </div>
+            <br />
+            <!-- hello -->
+            <div class="row">
+              <div class="col-md-4">
+              
+              </div>
+            </div>
+
+            <!-- card1 -->
+            <div class="col-md-3  pb-2">
+              <div class="card" style="color: #000000; border-radius: 30px">
+                <div class="card-body ">
+                  <div class="d-flex">
+                    <p class="flex-grow-1">Warsaw</p>               
+                  </div>
+                  <div class="d-flex flex-column text-center mt-5 mb-4">
+                    <p
+                      class="display-8 mb-0 font-weight-bold "
+                      style="color: #1c2331"
+                    >
+                      13°C
+                    </p>          
+                    <span class="small" style="color: #868b94">Stormy</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="flex-grow-1" style="font-size: 1rem">          
+                      <div>
+                        <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
+                        <span class="ms-1"> 84% </span>
+                      </div>   
+                    </div>
+                    <div>
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
+                        width="30px"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card2 -->
+              <div class="col-md-3  pb-2">
+              <div class="card" style="color: #000000; border-radius: 30px">
+                <div class="card-body ">
+                  <div class="d-flex">
+                    <p class="flex-grow-1">Warsaw</p>               
+                  </div>
+                  <div class="d-flex flex-column text-center mt-5 mb-4">
+                    <p
+                      class="display-8 mb-0 font-weight-bold "
+                      style="color: #1c2331"
+                    >
+                      13°C
+                    </p>          
+                    <span class="small" style="color: #868b94">Stormy</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="flex-grow-1" style="font-size: 1rem">          
+                      <div>
+                        <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
+                        <span class="ms-1"> 84% </span>
+                      </div>   
+                    </div>
+                    <div>
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
+                        width="30px"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card3 -->
+               <div class="col-md-3  pb-2">
+              <div class="card" style="color: #000000; border-radius: 30px">
+                <div class="card-body ">
+                  <div class="d-flex">
+                    <p class="flex-grow-1">Warsaw</p>               
+                  </div>
+                  <div class="d-flex flex-column text-center mt-5 mb-4">
+                    <p
+                      class="display-8 mb-0 font-weight-bold "
+                      style="color: #1c2331"
+                    >
+                      13°C
+                    </p>          
+                    <span class="small" style="color: #868b94">Stormy</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="flex-grow-1" style="font-size: 1rem">          
+                      <div>
+                        <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
+                        <span class="ms-1"> 84% </span>
+                      </div>   
+                    </div>
+                    <div>
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
+                        width="30px"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card4 -->
+            <div class="col-md-3  pb-2">
+              <div class="card" style="color: #000000; border-radius: 30px">
+                <div class="card-body ">
+                  <div class="d-flex">
+                    <p class="flex-grow-1">Warsaw</p>               
+                  </div>
+                  <div class="d-flex flex-column text-center mt-5 mb-4">
+                    <p
+                      class="display-8 mb-0 font-weight-bold "
+                      style="color: #1c2331"
+                    >
+                      13°C
+                    </p>          
+                    <span class="small" style="color: #868b94">Stormy</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="flex-grow-1" style="font-size: 1rem">          
+                      <div>
+                        <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
+                        <span class="ms-1"> 84% </span>
+                      </div>   
+                    </div>
+                    <div>
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
+                        width="30px"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+   </div>
+     
     <!-- modal return go -->
     <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
         aria-hidden="true">
@@ -211,6 +525,14 @@ import HotelDatePicker from "vue-hotel-datepicker";
 import "vue-hotel-datepicker/dist/vueHotelDatepicker.css";
 var startDate;
 var endDate;
+var t1=0;
+var ta1=0;
+var t2=0;
+var ta2=0;
+var t3=0;
+var ta3=0;
+var t4=0;
+var ta4=0;
 export default {
   components: {
     HotelDatePicker
@@ -224,7 +546,11 @@ export default {
       city1: "",
       iata: "",
       iata1: "",
-
+      hours: "",
+      temp1:"",
+      temp2:"",
+      temp3:"",
+      temp4:"",
       leaves: [],
       destinations: [],
       dates: {
@@ -293,17 +619,40 @@ export default {
            "http://api.weatherapi.com/v1/forecast.json?key=eb7d27b37d204bbbb2241423213112&q=" +
           this.city1 +
           "&dt=" +
-          this.dates.out 
-           
+          this.dates.out         
            
         )
         .then(res => {
-          console.log(res.data);
+          // console.log(res.data.forecast.forecastday[0].hour[0].cloud);
+          this.hours = res.data.forecast.forecastday[0].hour;
+         // console.log(this.hours);
           this.weather = res.data;
-        })
+        for (var i = 0; i < 24; i++) {
+        if (i >= 0 && i < 6) {
+         // console.log(this.hours[i].temp_c);
+        t1 = t1+ this.hours[i].temp_c;     
+      }
+        else if (i >= 6 && i < 12) {
+          t2 = t2+ this.hours[i].temp_c; 
+        
+      } else if (i >= 12 && i < 18) {
+        t3 = t3+ this.hours[i].temp_c;  
+      } else if (i >= 18 && i < 24) {
+       t4 = t4+ this.hours[i].temp_c;  
+      } 
+      }
+      this.temp1 = (t1/6).toFixed(2); 
+      this.temp2 = (t2/6).toFixed(2);
+      this.temp3 = (t3/6).toFixed(2);
+      this.temp4 = (t4/6).toFixed(2); 
+        
+        }
+        )
         .catch(err => {
           console.log(err);
         });
+
+   
     }
   }
 };
