@@ -1,6 +1,7 @@
 <template>
-  <section>
-  <body>
+ <div>
+ 
+  <div class="container-flex">
     <div id="booking" class="section">
         <div class="section-center">
             <div class="container">
@@ -8,11 +9,10 @@
                     <div class="col-md-4">
                         <div class="booking-cta">
                             <h1>Book your flight today</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laboriosam numquam at
-                            </p>
+                           
                         </div>
                     </div>
-                    <div class="col-md-7 col-md-offset-1">
+                    <div class="col-md-8 ">
                         <div class="booking-form">
                             <form>
                                 <div class="form-group">
@@ -116,7 +116,11 @@
             </div>
         </div>
     </div>
+    </div>
+    
+
    <!-- weather data -->
+   <div class="container-flex">
    <div class="row"> 
     <div class="col-md-6">
     <section class="" style="background-color: rgb(242, 242, 242)">
@@ -124,7 +128,7 @@
         <div class="row d-flex justify-content-left align-items-center h-100">
           <div class="row">
             <div class="wrapper">
-              <div class="typing-demo">Weather data in <b>Dhaka</b></div>
+              <div class="typing-demo">Weather data in <b>{{cityName}}</b></div>
             </div>
             <br />
             <!-- hello -->
@@ -139,22 +143,22 @@
               <div class="card" style="color: #000000; border-radius: 30px">
                 <div class="card-body ">
                   <div class="d-flex">
-                    <p class="flex-grow-1">Warsaw</p>               
+                    <p class="flex-grow-1">Morning</p>               
                   </div>
                   <div class="d-flex flex-column text-center mt-5 mb-4">
                     <p
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                      13°C
+                      {{temp1}}
                     </p>          
-                    <span class="small" style="color: #868b94">Stormy</span>
+                    <span class="small" style="color: #868b94"></span>
                   </div>
                   <div class="d-flex align-items-center">
                     <div class="flex-grow-1" style="font-size: 1rem">          
                       <div>
                         <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
-                        <span class="ms-1"> 84% </span>
+                        <span class="ms-1"> {{chanceOfRain}}% </span>
                       </div>   
                     </div>
                     <div>
@@ -173,22 +177,22 @@
               <div class="card" style="color: #000000; border-radius: 30px">
                 <div class="card-body ">
                   <div class="d-flex">
-                    <p class="flex-grow-1">Warsaw</p>               
+                    <p class="flex-grow-1">Afternoon</p>               
                   </div>
                   <div class="d-flex flex-column text-center mt-5 mb-4">
                     <p
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                      13°C
+                     {{temp2}}
                     </p>          
-                    <span class="small" style="color: #868b94">Stormy</span>
+                    <span class="small" style="color: #868b94"></span>
                   </div>
                   <div class="d-flex align-items-center">
                     <div class="flex-grow-1" style="font-size: 1rem">          
                       <div>
                         <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
-                        <span class="ms-1"> 84% </span>
+                        <span class="ms-1"> {{chanceOfRain}}%  </span>
                       </div>   
                     </div>
                     <div>
@@ -206,22 +210,22 @@
               <div class="card" style="color: #000000; border-radius: 30px">
                 <div class="card-body ">
                   <div class="d-flex">
-                    <p class="flex-grow-1">Warsaw</p>               
+                    <p class="flex-grow-1">Evening</p>               
                   </div>
                   <div class="d-flex flex-column text-center mt-5 mb-4">
                     <p
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                      13°C
+                       {{temp3}}
                     </p>          
-                    <span class="small" style="color: #868b94">Stormy</span>
+                    <span class="small" style="color: #868b94"></span>
                   </div>
                   <div class="d-flex align-items-center">
                     <div class="flex-grow-1" style="font-size: 1rem">          
                       <div>
                         <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
-                        <span class="ms-1"> 84% </span>
+                        <span class="ms-1"> {{chanceOfRain}}%  </span>
                       </div>   
                     </div>
                     <div>
@@ -240,22 +244,22 @@
               <div class="card" style="color: #000000; border-radius: 30px">
                 <div class="card-body ">
                   <div class="d-flex">
-                    <p class="flex-grow-1">Warsaw</p>               
+                    <p class="flex-grow-1">Overnight</p>               
                   </div>
                   <div class="d-flex flex-column text-center mt-5 mb-4">
                     <p
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                      13°C
+                      {{temp4}}
                     </p>          
-                    <span class="small" style="color: #868b94">Stormy</span>
+                    <span class="small" style="color: #868b94"></span>
                   </div>
                   <div class="d-flex align-items-center">
                     <div class="flex-grow-1" style="font-size: 1rem">          
                       <div>
                         <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
-                        <span class="ms-1"> 84% </span>
+                        <span class="ms-1"> {{chanceOfRain}}%  </span>
                       </div>   
                     </div>
                     <div>
@@ -273,13 +277,15 @@
       </div>
     </section>
     </div>
+ 
     <div class="col-md-6"> 
-     <section class="" style="background-color: rgb(242, 242, 242)">
+     <div class="container-flex">
+    <section class="" style="background-color: rgb(242, 242, 242)">
       <div class="container py-5 ">
         <div class="row d-flex justify-content-left align-items-center h-100">
           <div class="row">
             <div class="wrapper">
-              <div class="typing-demo">Weather data in <b>Dhaka</b></div>
+              <div class="typing-demo">Weather data in <b>{{cityName}}</b></div>
             </div>
             <br />
             <!-- hello -->
@@ -294,22 +300,22 @@
               <div class="card" style="color: #000000; border-radius: 30px">
                 <div class="card-body ">
                   <div class="d-flex">
-                    <p class="flex-grow-1">Warsaw</p>               
+                    <p class="flex-grow-1">Morning</p>               
                   </div>
                   <div class="d-flex flex-column text-center mt-5 mb-4">
                     <p
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                      13°C
+                      {{temp1}}
                     </p>          
-                    <span class="small" style="color: #868b94">Stormy</span>
+                    <span class="small" style="color: #868b94"></span>
                   </div>
                   <div class="d-flex align-items-center">
                     <div class="flex-grow-1" style="font-size: 1rem">          
                       <div>
                         <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
-                        <span class="ms-1"> 84% </span>
+                        <span class="ms-1"> {{chanceOfRain}}% </span>
                       </div>   
                     </div>
                     <div>
@@ -328,22 +334,22 @@
               <div class="card" style="color: #000000; border-radius: 30px">
                 <div class="card-body ">
                   <div class="d-flex">
-                    <p class="flex-grow-1">Warsaw</p>               
+                    <p class="flex-grow-1">Afternoon</p>               
                   </div>
                   <div class="d-flex flex-column text-center mt-5 mb-4">
                     <p
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                      13°C
+                     {{temp2}}
                     </p>          
-                    <span class="small" style="color: #868b94">Stormy</span>
+                    <span class="small" style="color: #868b94"></span>
                   </div>
                   <div class="d-flex align-items-center">
                     <div class="flex-grow-1" style="font-size: 1rem">          
                       <div>
                         <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
-                        <span class="ms-1"> 84% </span>
+                        <span class="ms-1"> {{chanceOfRain}}%  </span>
                       </div>   
                     </div>
                     <div>
@@ -361,22 +367,22 @@
               <div class="card" style="color: #000000; border-radius: 30px">
                 <div class="card-body ">
                   <div class="d-flex">
-                    <p class="flex-grow-1">Warsaw</p>               
+                    <p class="flex-grow-1">Evening</p>               
                   </div>
                   <div class="d-flex flex-column text-center mt-5 mb-4">
                     <p
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                      13°C
+                       {{temp3}}
                     </p>          
-                    <span class="small" style="color: #868b94">Stormy</span>
+                    <span class="small" style="color: #868b94"></span>
                   </div>
                   <div class="d-flex align-items-center">
                     <div class="flex-grow-1" style="font-size: 1rem">          
                       <div>
                         <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
-                        <span class="ms-1"> 84% </span>
+                        <span class="ms-1"> {{chanceOfRain}}%  </span>
                       </div>   
                     </div>
                     <div>
@@ -395,22 +401,22 @@
               <div class="card" style="color: #000000; border-radius: 30px">
                 <div class="card-body ">
                   <div class="d-flex">
-                    <p class="flex-grow-1">Warsaw</p>               
+                    <p class="flex-grow-1">Overnight</p>               
                   </div>
                   <div class="d-flex flex-column text-center mt-5 mb-4">
                     <p
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                      13°C
+                      {{temp4}}
                     </p>          
-                    <span class="small" style="color: #868b94">Stormy</span>
+                    <span class="small" style="color: #868b94"></span>
                   </div>
                   <div class="d-flex align-items-center">
                     <div class="flex-grow-1" style="font-size: 1rem">          
                       <div>
                         <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
-                        <span class="ms-1"> 84% </span>
+                        <span class="ms-1"> {{chanceOfRain}}%  </span>
                       </div>   
                     </div>
                     <div>
@@ -428,6 +434,8 @@
       </div>
     </section>
     </div>
+    </div>
+   </div>
    </div>
      
     <!-- modal return go -->
@@ -516,8 +524,8 @@
         </div>
     </div>
 
-</body>
-  </section>
+
+ </div>
 </template>
 <script>
 import axios from "axios";
@@ -540,22 +548,24 @@ export default {
 
   data: function() {
     return {
+      chanceOfRain: "",
       leaveName: "",
       destinationName: "",
-      city: "",
-      city1: "",
-      iata: "",
-      iata1: "",
+      cityName: "China",
+      city: "Dhaka",
+      city1: "China",
+      iata: "DAC",
+      iata1: "DEX",
       hours: "",
-      temp1:"",
-      temp2:"",
-      temp3:"",
-      temp4:"",
+      temp1:"13.05",
+      temp2:"15.01",
+      temp3:"12.04",
+      temp4:"10.07",
       leaves: [],
       destinations: [],
       dates: {
-        in: null,
-        out: null
+        in: '2022-01-07',
+        out: '2022-01-08'
       }
     };
   },
@@ -625,8 +635,11 @@ export default {
         .then(res => {
           // console.log(res.data.forecast.forecastday[0].hour[0].cloud);
           this.hours = res.data.forecast.forecastday[0].hour;
+          this.chanceOfRain = res.data.forecast.forecastday[0].day.daily_chance_of_rain;
+          console.log('rain'+this.chanceOfRain);
          // console.log(this.hours);
           this.weather = res.data;
+          this.cityName = res.data.location.name;
         for (var i = 0; i < 24; i++) {
         if (i >= 0 && i < 6) {
          // console.log(this.hours[i].temp_c);
@@ -645,6 +658,7 @@ export default {
       this.temp2 = (t2/6).toFixed(2);
       this.temp3 = (t3/6).toFixed(2);
       this.temp4 = (t4/6).toFixed(2); 
+      console.log(this.temp1);
         
         }
         )
@@ -662,17 +676,8 @@ export default {
 
 <style scoped>
 .section {
-  position: relative;
-  height: 100vh;
-}
-
-.section .section-center {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  padding-top: 40px;
+  padding-bottom: 100px;
 }
 
 #booking {
@@ -686,10 +691,10 @@ export default {
 .booking-form {
   position: relative;
   background: #fff;
-  max-width: 642px;
+  
   width: 100%;
   margin: auto;
-  padding: 45px 25px 25px;
+  padding: 45px 25px 25px 25px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
