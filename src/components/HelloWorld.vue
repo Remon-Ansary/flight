@@ -9,7 +9,7 @@
             height="50"
             alt="logo"
           />
-          Flight
+          Flight  <i class="fas fa-paper-plane-o ml-1"></i>
         </a>
         <button
           class="navbar-toggler"
@@ -88,7 +88,7 @@
                                         <div class="form-group">
                                             <span class="form-label">Flying to</span>
                                             <span data-toggle="modal" data-target="#modalLoginForm"
-                                                class="form-control" type="text" placeholder="City or airport">   {{ iata1 }} 
+                                                class="form-control" type="text" placeholder="City or airport">  <span> {{ iata1 }} </span>
                                            {{ city1 }} </span>
                                                
                                            
@@ -148,7 +148,7 @@
                                     </div>
                                 </div>
                                 <div class="form-btn">
-                                    <button  @click="getWeather()"class="submit-btn">Show flights</button>
+                                    <button  @click="getWeather()"class="submit-btn">Show flights <i class="fas fa-paper-plane-o ml-1"></i></button>
                                 </div>
                             </form>
                         </div>
@@ -532,7 +532,7 @@
                     </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
-                    <button class="btn btn-secondary"  data-dismiss="modal" >Select</button>
+                    <button class="btn btn-secondary"  data-dismiss="modal" >Select <i class="fas fa-paper-plane-o ml-1"></i></button>
                 </div>
             </div>
         </div>
