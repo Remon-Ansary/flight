@@ -1,6 +1,47 @@
 <template>
  <div>
- 
+ <div class="container-flex">
+      <nav class="navbar navbar-light bg-light navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://i.ibb.co/xGgQ3dP/flight.png"
+            width="200"
+            height="50"
+            alt="logo"
+          />
+          Flight
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar-list-6"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbar-list-6"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   <div class="container-flex">
     <div id="booking" class="section">
         <div class="section-center">
@@ -145,7 +186,9 @@
                   <div class="d-flex">
                     <p class="flex-grow-1">Morning</p>               
                   </div>
+                  
                   <div class="d-flex flex-column text-center mt-5 mb-4">
+                  
                     <p
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
@@ -489,7 +532,7 @@
                     </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
-                    <button class="btn btn-default">Select</button>
+                    <button class="btn btn-secondary"  data-dismiss="modal" >Select</button>
                 </div>
             </div>
         </div>
@@ -509,28 +552,125 @@
                     <div class="md-form mb-5">
                        
                         <HotelDatePicker @check-in-changed="checkIn" @check-out-changed="checkOut" />
-                        <h3>CheckIn:</h3>
-                        <pre>{{ dates.in }}</pre>
-                        <h3>CheckOut:</h3>
-                        <pre>{{ dates.out }}</pre>
+                     <br/><br/>
+                        <h5>CheckIn: {{ dates.in }}</h5>
+                    
+                        <h5>CheckOut: {{ dates.out }}</h5>
+                      
                     </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
-                    <button class="btn btn-indigo">
-                        Send <i class="fas fa-paper-plane-o ml-1"></i>
+                    <button class="btn btn-secondary" data-dismiss="modal">
+                        Select <i class="fas fa-paper-plane-o ml-1"></i>
                     </button>
                 </div>
             </div>
         </div>
     </div>
+<!--json part-->
+<div class="container-flex">
+<div class="row">
+<div class="col-md-6">
 
+<span>{{flightdata.data.economy.from}}</span> To <span>{{flightdata.data.economy.to}}</span>
+</div>
 
+<div class="col-md-6">
+<div class="row">
+<div class="col-md-6">
+<span>from</span><span>fair</span>
+</div>
+<div class="col-md-6">
+<span>from2</span><span>fair2</span>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div>
+</div>
+<div>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<footer class="footer_area section_padding_130_0">
+      <div class="container">
+        <div class="row">
+          <!-- Single Widget-->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Footer Logo-->
+              <div class="footer-logo mb-3"></div>
+              <h1>Flight</h1>
+              <!-- Copywrite Text-->
+              <div class="copywrite-text mb-5">
+               
+              </div>
+              <!-- Footer Social Area-->
+              <div class="footer_social_area"><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest"><i class="fa fa-pinterest"></i></a><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype"><i class="fa fa-skype"></i></a><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></div>
+            </div>
+          </div>
+          <!-- Single Widget-->
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">About</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Corporate Sale</a></li>
+                  <li><a href="#">Terms &amp; Policy</a></li>
+                  <li><a href="#">Community</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Single Widget-->
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">Support</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li><a href="#">Help</a></li>
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Term &amp; Conditions</a></li>
+                  <li><a href="#">Help &amp; Support</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Single Widget-->
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">Contact</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li><a href="#">Call Centre</a></li>
+                  <li><a href="#">Email Us</a></li>
+                  <li><a href="#">Term &amp; Conditions</a></li>
+                  <li><a href="#">Help Center</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer></div>
+</div>
  </div>
 </template>
 <script>
 import axios from "axios";
 import HotelDatePicker from "vue-hotel-datepicker";
 import "vue-hotel-datepicker/dist/vueHotelDatepicker.css";
+import flightdata from "./flightdata.json";
 var startDate;
 var endDate;
 var t1=0;
@@ -548,6 +688,7 @@ export default {
 
   data: function() {
     return {
+      flightdata: flightdata,
       chanceOfRain: "",
       leaveName: "",
       destinationName: "",
@@ -860,4 +1001,99 @@ export default {
   font-size: 22px;
   color: #191a1e;
 }
+
+body{margin-top:20px;}
+.footer_area {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+webkit-box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
+    box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
+    padding:60px;
+}
+.footer_area .row {
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+.single-footer-widget {
+    position: relative;
+    z-index: 1;
+}
+.single-footer-widget .copywrite-text a {
+    color: #747794;
+    font-size: 1rem;
+}
+.single-footer-widget .copywrite-text a:hover,
+.single-footer-widget .copywrite-text a:focus {
+    color: #3f43fd;
+}
+.single-footer-widget .widget-title {
+    margin-bottom: 1.5rem;
+}
+.single-footer-widget .footer_menu li a {
+    color: #747794;
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 1rem;
+}
+.single-footer-widget .footer_menu li a:hover,
+.single-footer-widget .footer_menu li a:focus {
+    color: #3f43fd;
+}
+.single-footer-widget .footer_menu li:last-child a {
+    margin-bottom: 0;
+}
+
+.footer_social_area {
+    position: relative;
+    z-index: 1;
+}
+.footer_social_area a {
+    border-radius: 50%;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+    display: inline-block;
+    background-color: #f5f5ff;
+    line-height: 40px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-right: 10px;
+}
+.footer_social_area a i {
+    line-height: 36px;
+}
+.footer_social_area a:hover,
+.footer_social_area a:focus {
+    color: #ffffff;
+}
+
+@-webkit-keyframes bi-cycle {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes bi-cycle {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+ol li, ul li {
+    list-style: none;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
 </style>

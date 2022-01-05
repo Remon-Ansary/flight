@@ -1,0 +1,17 @@
+{
+  "date": "2022-01-08",
+  "place": "China",
+  "data":{
+  "economy": {
+    "from": "Dhaka",
+    "to": "China",
+    "fare": "800$",
+    "time": ""
+  },
+  "premium": {
+    "from": "",
+    "fare": "",
+    "time": ""
+  }
+}
+}
