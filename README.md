@@ -38,7 +38,7 @@ Select departure and destination
 
 ### Step 2:
 
-Select date
+Select date and click show flights button.
 
 !["upper portion"](https://i.ibb.co/1M88t1k/gitdate.png)
 
