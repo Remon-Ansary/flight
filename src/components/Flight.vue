@@ -503,7 +503,7 @@
             <div class="modal-content">
                 <div class="modal-header text-center">
                     <h4 class="modal-title w-100 font-weight-bold">
-                        Select Deperture City
+                        Select Departure City
                     </h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -568,9 +568,9 @@
                        
                         <HotelDatePicker @check-in-changed="checkIn" @check-out-changed="checkOut" />
                      <br/><br/>
-                        <h5>CheckIn: {{ dates.in }}</h5>
+                        <h5>Departure date: {{ dates.in }}</h5>
                     
-                        <h5>CheckOut: {{ dates.out }}</h5>
+                        <h5>Arrival date: {{ dates.out }}</h5>
                       
                     </div>
                 </div>
@@ -589,7 +589,7 @@
 <div class="row">
 
 <div style="padding-left:30px" class="col-md-3">
-<h6>Sort By</h6>
+<h6>Sort By:</h6>
 </div>
 <div class="col-md-3">
 <u>Recommended</u>
@@ -602,6 +602,9 @@
 </div>
 </div>
 </div>
+</div>
+<div class="row">
+<p><b>3</b>  Flights Found &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">Filter <i class="fas fa-caret-down"></i></span>  </p>
 </div>
 <div class="container-flex">
 <div class="row">
@@ -745,7 +748,7 @@
             <div>
               <span>From</span><br>
               <span>{{flightdata.premium.price1}}</span><br>
-              <span >View fare </span>
+              <span >View fare   <i class="fas fa-caret-down"></i></span>
             </div>
           </div>
         </div>
@@ -755,7 +758,7 @@
            
               <span>From</span><br>
               <span>{{flightdata.premium.price2}}</span><br>
-              <span>View fare </span>
+              <span>View fare  <i class="fas fa-caret-down"></i></span>
             </div>
           </div>
         </div>
@@ -764,7 +767,7 @@
             <div>     
               <span>From</span><br>
               <span>{{flightdata.premium.price3}}</span><br>
-              <span>View fare</span>
+              <span>View fare  <i class="fas fa-caret-down"></i></span>
             </div>
           </div>
         </div>
@@ -780,7 +783,7 @@
             <div>    
               <span>From</span><br>
               <span>{{flightdata.economy.price1}}</span><br>
-              <span>View fare </span>
+              <span>View fare  <i class="fas fa-caret-down"></i> </span>
             </div>
           </div>
         </div>
@@ -789,7 +792,7 @@
             <div>       
               <span >From</span><br>
               <span>{{flightdata.economy.price2}}</span><br>
-              <span>View fare</span>
+              <span>View fare  <i class="fas fa-caret-down"></i></span>
             </div>
           </div>
         </div>
@@ -798,7 +801,7 @@
             <div>
               <span >From</span><br>
               <span>{{flightdata.economy.price3}}</span><br>
-              <span>View fare </span>
+              <span>View fare  <i class="fas fa-caret-down"></i></span>
             </div>
           </div>
         </div>
@@ -1320,13 +1323,6 @@ ol li, ul li {
 ol, ul {
     margin: 0;
     padding: 0;
-}
-.modal-dialog {
-    min-height: calc(80vh );
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: auto;
 }
 
 </style>
