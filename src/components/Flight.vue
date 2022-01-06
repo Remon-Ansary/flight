@@ -1321,6 +1321,12 @@ ol, ul {
     margin: 0;
     padding: 0;
 }
-
+.modal-dialog {
+    min-height: calc(80vh );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+}
 
 </style>
