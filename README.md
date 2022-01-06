@@ -16,8 +16,8 @@
 
 ## API used
 
-https://rapidapi.com/weatherapi/api/weatherapi-com/
-https://api.sharetrip.net/api/v1/flight/search/airport?name=Vancouver
+- https://rapidapi.com/weatherapi/api/weatherapi-com/
+- https://api.sharetrip.net/api/v1/flight/search/airport?name=Vancouver
 
 # Packages used
 
@@ -46,5 +46,5 @@ Select date
 This is the first screen of the website.
 !["upper portion"](https://i.ibb.co/tZCW84B/1stpart.png)
 
-this is the second screen of the website.
+This is the second screen of the website.
 !["upper portion"](https://i.ibb.co/644nx77/2ndpart.png)

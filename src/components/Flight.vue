@@ -346,7 +346,7 @@
         <div class="row d-flex justify-content-left align-items-center h-100">
           <div class="row">
             <div class="wrapper">
-              <div class="typing-demo"><b>{{dates.out}}</b>  Forecast For  <b>{{city1}}</b><b>, {{iata1}}</b></div>
+              <div class="typing-demo"><b>{{dates.out}}</b>  Forecast For  <b>{{city}}</b><b>, {{iata}}</b></div>
             </div>
             <br />
              <br />
@@ -369,7 +369,7 @@
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                      {{temp1}}&deg;
+                      {{temp12}}&deg;
                     </p>          
                        <span class="small" > <img
                         src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
@@ -400,7 +400,7 @@
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                     {{temp2}}&deg;
+                     {{temp22}}&deg;
                     </p>          
                         <span class="small" > <img
                         src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
@@ -432,7 +432,7 @@
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                       {{temp3}}&deg;
+                       {{temp32}}&deg;
                     </p>          
                       <span class="small" > <img
                         src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
@@ -457,9 +457,7 @@
             <!-- card4 -->
             <div class="col-md-3  pb-2">
               <div class="card" style="color: #000000; border-radius: 30px">
-                <div class="card-body ">
-                
-                                 
+                <div class="card-body ">                             
                 
                   <div class="d-flex flex-column text-center mt-5 mb-4">
                    <p class="flex-grow-1">Overnight</p> 
@@ -467,7 +465,7 @@
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                      {{temp4}}&deg;
+                      {{temp42}}&deg;
                     </p>          
                        <span class="small" > <img
                         src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
@@ -929,6 +927,10 @@ export default {
       temp2:"0",
       temp3:"0",
       temp4:"0",
+      temp12:"0",
+      temp22:"0",
+      temp32:"0",
+      temp42:"0",
       leaves: [],
       destinations: [],
       dates: {
@@ -967,6 +969,7 @@ export default {
           console.log(err);
         });
     },
+    
     setState(leave) {
       console.log(leave);
       this.leaveName = leave.name;
@@ -1037,7 +1040,52 @@ axios.request(options)
           console.log(err);
         });
 
-   
+   //seconda
+
+       var options2 = {
+  method: 'GET',
+  url: 'https://weatherapi-com.p.rapidapi.com/forecast.json',
+  params: {q: this.city1, days: '14', dt: this.dates.out},
+  headers: {
+    'x-rapidapi-host': 'weatherapi-com.p.rapidapi.com',
+    'x-rapidapi-key': '9b2bc1d5edmsheaa734db28b42abp1bafd8jsn9d1a768758f9'
+  }
+};
+
+axios.request(options2)
+        .then(res => {
+          // console.log(res.data.forecast.forecastday[0].hour[0].cloud);
+          this.hours2 = res.data.forecast.forecastday[0].hour;
+          this.chanceOfRain2 = res.data.forecast.forecastday[0].day.daily_chance_of_rain;
+          console.log('rain'+this.chanceOfRain);
+         // console.log(this.hours);
+          this.weather2 = res.data;
+          this.cityName2 = res.data.location.name;
+        for (var i = 0; i < 24; i++) {
+        if (i >= 0 && i < 6) {
+         // console.log(this.hours[i].temp_c);
+        t1 = t1+ this.hours[i].temp_c;     
+      }
+        else if (i >= 6 && i < 12) {
+          t2 = t2+ this.hours[i].temp_c; 
+        
+      } else if (i >= 12 && i < 18) {
+        t3 = t3+ this.hours[i].temp_c;  
+      } else if (i >= 18 && i < 24) {
+       t4 = t4+ this.hours[i].temp_c;  
+      } 
+      }
+      this.temp12 = (t1/6).toFixed(2); 
+      this.temp22 = (t2/6).toFixed(2);
+      this.temp32 = (t3/6).toFixed(2);
+      this.temp42 = (t4/6).toFixed(2); 
+      console.log(this.temp12);
+        
+        }
+        )
+        .catch(err => {
+          console.log(err);
+        });
     }
   }
 };
