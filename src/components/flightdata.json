@@ -1,17 +1,30 @@
 {
   "date": "2022-01-08",
-  "place": "China",
-  "data":{
+  "from": "HKG",
+  "to":"LAS",
   "economy": {
-    "from": "Dhaka",
-    "to": "China",
-    "fare": "800$",
-    "time": ""
+    "price1": "HKD12,524",
+    "price2": "HKD16,378",
+    "price3": "HKD16,378"
   },
   "premium": {
-    "from": "",
-    "fare": "",
-    "time": ""
+    "price1": "HKD19,804",
+    "price2": "HKD21,578",
+    "price3": "HKD21,578"
+  },
+  "time1": {
+    "start": "00:15",
+    "end": "00:50",
+    "duration": "16h 35m"
+  },
+  "time2": {
+    "start": "00:15",
+    "end": "08:26",
+    "duration": "24h 11m"
+  },
+  "time3": {
+    "start": "00:15",
+    "end": "12:02",
+    "duration": "27h 47m"
   }
-}
 }

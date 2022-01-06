@@ -88,7 +88,7 @@
                                         <div class="form-group">
                                             <span class="form-label">Flying to</span>
                                             <span data-toggle="modal" data-target="#modalLoginForm"
-                                                class="form-control" type="text" placeholder="City or airport">  <span> {{ iata1 }} </span>
+                                                class="form-control" type="text" placeholder="City or airport">   <span> {{ iata1 }} </span>
                                            {{ city1 }} </span>
                                                
                                            
@@ -571,22 +571,171 @@
 <div class="container-flex">
 <div class="row">
 <div class="col-md-6">
-
-<span>{{flightdata.data.economy.from}}</span> To <span>{{flightdata.data.economy.to}}</span>
+    <div class="row ">
+    </div>
+    <div class="row ">
+      <div class="col-md-6" style="text-align: center">
+        <div class="row ">
+          <div class=" col-md-6">
+             
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-md-6" >
+            <div >  
+            
+              <span></span><br>
+              <span>{{flightdata.time1.start}} </i><br>
+              <span>{{flightdata.from}}</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row ">
+          <div class=" col-md-6" >
+            <div >        
+            
+              <span></span><br>
+             <span>{{flightdata.time1.start}} </i><br>
+              <span>{{flightdata.from}}</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-md-6">
+            <div>
+             
+              <span></span><br>
+             <span>{{flightdata.time1.start}} </i><br>
+              <span>{{flightdata.from}}</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="col-md-6" style="text-align: center">
+        <div class="row ">
+          <div class=" col-md-6">
+             
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-md-6" >
+            <div >  
+            
+              <span></span><br>
+              <span>{{flightdata.time1.end}} </i><br>
+              <span>{{flightdata.to}}</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row ">
+          <div class=" col-md-6" >
+            <div >        
+            
+              <span></span><br>
+             <span>{{flightdata.time1.end}} </i><br>
+              <span>{{flightdata.to}}</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-md-6">
+            <div>
+             
+              <span></span><br>
+             <span>{{flightdata.time1.staendt}} </i><br>
+              <span>{{flightdata.to}}</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
-
 <div class="col-md-6">
-<div class="row">
-<div class="col-md-6">
-<span>from</span><span>fair</span>
-</div>
-<div class="col-md-6">
-<span>from2</span><span>fair2</span>
-</div>
+    <div class="row ">
+      <div class="col-md-6" style="text-align: center">
+        <div class="row ">
+          <div class="col-md-12" style="background-color:rgb(9, 67, 124)">
+              <span class="fw-bold" style="color: white">Economy</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12" style="border-bottom-style: solid; border-bottom-color: black">
+            <div>
+              <span>From</span><br>
+              <span>{{flightdata.premium.price1}}</span><br>
+              <span style="font-size:12px;">View fare </span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12" style="border-bottom-style: solid; border-bottom-color: black">
+            <div>
+           
+              <span>From</span><br>
+              <span>{{flightdata.premium.price2}}</span><br>
+              <span>View fare </span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12" style="border-bottom-style: solid; border-bottom-color: black">
+            <div>     
+              <span>From</span><br>
+              <span>{{flightdata.premium.price3}}</span><br>
+              <span>View fare</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" style="text-align: center">
+        <div class="row ">
+          <div class="col-md-12" style="background-color:steelblue">
+           
+              <span class="fw-bold" style="color: white">Premium Economy</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12" style="border-bottom-style: solid; border-bottom-color: black;">
+            <div>    
+              <span>From</span><br>
+              <span>{{flightdata.economy.price1}}</span><br>
+              <span>View fare </span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12" style="border-bottom-style: solid; border-color: black">
+            <div>       
+              <span >From</span><br>
+              <span>{{flightdata.economy.price2}}</span><br>
+              <span>View fare</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12" style="border-bottom-style: solid; border-bottom-color: black">
+            <div>
+              <span >From</span><br>
+              <span>{{flightdata.economy.price3}}</span><br>
+              <span>View fare </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>
-</div>
-</div>
+
+
+
+
 
 </div>
 <div>
@@ -705,8 +854,8 @@ export default {
       leaves: [],
       destinations: [],
       dates: {
-        in: '2022-01-07',
-        out: '2022-01-08'
+        in: 'Select Date',
+        out: 'Select Date'
       }
     };
   },
