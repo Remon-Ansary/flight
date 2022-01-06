@@ -5,8 +5,8 @@
         <a class="navbar-brand" href="#">
           <img
             src="https://i.ibb.co/xGgQ3dP/flight.png"
-            width="200"
-            height="50"
+            width="100"
+            height="30"
             alt="logo"
           />
           Flight  <i class="fas fa-paper-plane-o ml-1"></i>
