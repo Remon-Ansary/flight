@@ -186,7 +186,159 @@
    </div>
    <br>
    <div class="row"> 
-    <div class="col-md-6">
+   
+     <div class="col-md-6">
+    <section class="" style="background-color: rgb(242, 242, 242)">
+      <div class="container py-5 ">
+        <div class="row d-flex justify-content-left align-items-center h-100">
+          <div class="row">
+            <div class="wrapper">
+              <div class="typing-demo"><b>{{dates.out}}</b>  Forecast For  <b>{{city}}</b><b>, {{iata}}</b></div>
+            </div>
+            <br />
+             <br />
+            <!-- hello -->
+            <div class="row">
+              <div class="col-md-4">
+              
+              </div>
+            </div>
+
+            <!-- card1 -->
+            <div class="col-md-3  pb-2">
+              <div class="card" style="color: #000000; border-radius: 30px">
+                <div class="card-body ">
+                 
+                  
+                  <div class="d-flex flex-column text-center mt-5 mb-4">
+                     <p class="flex-grow-1">Morning</p> 
+                    <p
+                      class="display-8 mb-0 font-weight-bold "
+                      style="color: #1c2331"
+                    >
+                      {{temp12}}&deg;
+                    </p>          
+                       <span class="small" > <img
+                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        width="40px"
+                      /></span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="flex-grow-1" style="font-size: 1rem">          
+                      <div>
+                        <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
+                        <span class="ms-1"> {{chanceOfRain}}% </span>
+                      </div>   
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card2 -->
+              <div class="col-md-3  pb-2">
+              <div class="card" style="color: #000000; border-radius: 30px">
+                <div class="card-body ">
+                
+                  <div class="d-flex flex-column text-center mt-5 mb-4">
+                      <p class="flex-grow-1">Afternoon</p> 
+                    <p
+                      class="display-8 mb-0 font-weight-bold "
+                      style="color: #1c2331"
+                    >
+                     {{temp22}}&deg;
+                    </p>          
+                        <span class="small" > <img
+                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        width="40px"
+                      /></span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="flex-grow-1" style="font-size: 1rem">          
+                      <div>
+                        <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
+                        <span class="ms-1"> {{chanceOfRain}}%  </span>
+                      </div>   
+                    </div>
+                    <div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card3 -->
+               <div class="col-md-3  pb-2">
+              <div class="card" style="color: #000000; border-radius: 30px">
+                <div class="card-body ">
+                  
+                  <div class="d-flex flex-column text-center mt-5 mb-4">
+                    <p class="flex-grow-1">Evening</p>  
+                    <p
+                      class="display-8 mb-0 font-weight-bold "
+                      style="color: #1c2331"
+                    >
+                       {{temp32}}&deg;
+                    </p>          
+                      <span class="small" > <img
+                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        width="40px"
+                      /></span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="flex-grow-1" style="font-size: 1rem">          
+                      <div>
+                        <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
+                        <span class="ms-1"> {{chanceOfRain}}%  </span>
+                      </div>   
+                    </div>
+                    <div>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card4 -->
+            <div class="col-md-3  pb-2">
+              <div class="card" style="color: #000000; border-radius: 30px">
+                <div class="card-body ">                             
+                
+                  <div class="d-flex flex-column text-center mt-5 mb-4">
+                   <p class="flex-grow-1">Overnight</p> 
+                    <p
+                      class="display-8 mb-0 font-weight-bold "
+                      style="color: #1c2331"
+                    >
+                      {{temp42}}&deg;
+                    </p>          
+                       <span class="small" > <img
+                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        width="40px"
+                      /></span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="flex-grow-1" style="font-size: 1rem">          
+                      <div>
+                        <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
+                        <span class="ms-1"> {{chanceOfRain}}%  </span>
+                      </div>   
+                    </div>
+                    <div>
+                  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+         <div class="col-md-6">
     <section class="" style="background-color: rgb(242, 242, 242)">
       <div class="container py-5 ">
         <div class="row d-flex justify-content-left align-items-center h-100">
@@ -339,158 +491,6 @@
       </div>
     </section>
     </div>
- 
-        <div class="col-md-6">
-    <section class="" style="background-color: rgb(242, 242, 242)">
-      <div class="container py-5 ">
-        <div class="row d-flex justify-content-left align-items-center h-100">
-          <div class="row">
-            <div class="wrapper">
-              <div class="typing-demo"><b>{{dates.out}}</b>  Forecast For  <b>{{city}}</b><b>, {{iata}}</b></div>
-            </div>
-            <br />
-             <br />
-            <!-- hello -->
-            <div class="row">
-              <div class="col-md-4">
-              
-              </div>
-            </div>
-
-            <!-- card1 -->
-            <div class="col-md-3  pb-2">
-              <div class="card" style="color: #000000; border-radius: 30px">
-                <div class="card-body ">
-                 
-                  
-                  <div class="d-flex flex-column text-center mt-5 mb-4">
-                     <p class="flex-grow-1">Morning</p> 
-                    <p
-                      class="display-8 mb-0 font-weight-bold "
-                      style="color: #1c2331"
-                    >
-                      {{temp12}}&deg;
-                    </p>          
-                       <span class="small" > <img
-                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
-                        width="40px"
-                      /></span>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <div class="flex-grow-1" style="font-size: 1rem">          
-                      <div>
-                        <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
-                        <span class="ms-1"> {{chanceOfRain}}% </span>
-                      </div>   
-                    </div>
-                   
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- card2 -->
-              <div class="col-md-3  pb-2">
-              <div class="card" style="color: #000000; border-radius: 30px">
-                <div class="card-body ">
-                
-                  <div class="d-flex flex-column text-center mt-5 mb-4">
-                      <p class="flex-grow-1">Afternoon</p> 
-                    <p
-                      class="display-8 mb-0 font-weight-bold "
-                      style="color: #1c2331"
-                    >
-                     {{temp22}}&deg;
-                    </p>          
-                        <span class="small" > <img
-                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
-                        width="40px"
-                      /></span>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <div class="flex-grow-1" style="font-size: 1rem">          
-                      <div>
-                        <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
-                        <span class="ms-1"> {{chanceOfRain}}%  </span>
-                      </div>   
-                    </div>
-                    <div>
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- card3 -->
-               <div class="col-md-3  pb-2">
-              <div class="card" style="color: #000000; border-radius: 30px">
-                <div class="card-body ">
-                  
-                  <div class="d-flex flex-column text-center mt-5 mb-4">
-                    <p class="flex-grow-1">Evening</p>  
-                    <p
-                      class="display-8 mb-0 font-weight-bold "
-                      style="color: #1c2331"
-                    >
-                       {{temp32}}&deg;
-                    </p>          
-                      <span class="small" > <img
-                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
-                        width="40px"
-                      /></span>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <div class="flex-grow-1" style="font-size: 1rem">          
-                      <div>
-                        <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
-                        <span class="ms-1"> {{chanceOfRain}}%  </span>
-                      </div>   
-                    </div>
-                    <div>
-                     
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- card4 -->
-            <div class="col-md-3  pb-2">
-              <div class="card" style="color: #000000; border-radius: 30px">
-                <div class="card-body ">                             
-                
-                  <div class="d-flex flex-column text-center mt-5 mb-4">
-                   <p class="flex-grow-1">Overnight</p> 
-                    <p
-                      class="display-8 mb-0 font-weight-bold "
-                      style="color: #1c2331"
-                    >
-                      {{temp42}}&deg;
-                    </p>          
-                       <span class="small" > <img
-                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
-                        width="40px"
-                      /></span>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <div class="flex-grow-1" style="font-size: 1rem">          
-                      <div>
-                        <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
-                        <span class="ms-1"> {{chanceOfRain}}%  </span>
-                      </div>   
-                    </div>
-                    <div>
-                  
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    </div>
    </div>
    </div>
      
@@ -602,7 +602,7 @@
 </div>
 </div>
 <div class="row">
-<p><b>3</b>  Flights Found &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">Filter <i class="fas fa-caret-down"></i></span>  </p>
+<p style="padding-left:30px"><b>3</b>  Flights Found &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">Filter <i class="fas fa-caret-down"></i></span>  </p>
 </div>
 <div class="container-flex">
 <div class="row">
@@ -906,6 +906,12 @@ var t3=0;
 var ta3=0;
 var t4=0;
 var ta4=0;
+var t12=0;
+var t22=0;
+var t32=0;
+var t42=0;
+
+
 export default {
   components: {
     HotelDatePicker
@@ -1011,12 +1017,12 @@ axios.request(options)
           this.hours = res.data.forecast.forecastday[0].hour;
           this.chanceOfRain = res.data.forecast.forecastday[0].day.daily_chance_of_rain;
           console.log('rain'+this.chanceOfRain);
-         // console.log(this.hours);
+    
           this.weather = res.data;
           this.cityName = res.data.location.name;
         for (var i = 0; i < 24; i++) {
         if (i >= 0 && i < 6) {
-         // console.log(this.hours[i].temp_c);
+       
         t1 = t1+ this.hours[i].temp_c;     
       }
         else if (i >= 6 && i < 12) {
@@ -1040,12 +1046,12 @@ axios.request(options)
           console.log(err);
         });
 
-   //seconda
+   
 
        var options2 = {
   method: 'GET',
   url: 'https://weatherapi-com.p.rapidapi.com/forecast.json',
-  params: {q: this.city1, days: '14', dt: this.dates.out},
+  params: {q: this.city, days: '14', dt: this.dates.in},
   headers: {
     'x-rapidapi-host': 'weatherapi-com.p.rapidapi.com',
     'x-rapidapi-key': '9b2bc1d5edmsheaa734db28b42abp1bafd8jsn9d1a768758f9'
@@ -1063,22 +1069,22 @@ axios.request(options2)
           this.cityName2 = res.data.location.name;
         for (var i = 0; i < 24; i++) {
         if (i >= 0 && i < 6) {
-         // console.log(this.hours[i].temp_c);
-        t1 = t1+ this.hours[i].temp_c;     
+   
+        t12 = t1+ this.hours2[i].temp_c;     
       }
         else if (i >= 6 && i < 12) {
-          t2 = t2+ this.hours[i].temp_c; 
+          t22 = t2+ this.hours2[i].temp_c; 
         
       } else if (i >= 12 && i < 18) {
-        t3 = t3+ this.hours[i].temp_c;  
+        t32 = t3+ this.hours2[i].temp_c;  
       } else if (i >= 18 && i < 24) {
-       t4 = t4+ this.hours[i].temp_c;  
+       t42 = t4+ this.hours2[i].temp_c;  
       } 
       }
-      this.temp12 = (t1/6).toFixed(2); 
-      this.temp22 = (t2/6).toFixed(2);
-      this.temp32 = (t3/6).toFixed(2);
-      this.temp42 = (t4/6).toFixed(2); 
+      this.temp12 = (t12/6).toFixed(2); 
+      this.temp22 = (t22/6).toFixed(2);
+      this.temp32 = (t32/6).toFixed(2);
+      this.temp42 = (t42/6).toFixed(2); 
       console.log(this.temp12);
         
         }
