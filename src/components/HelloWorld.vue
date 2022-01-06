@@ -33,10 +33,16 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#">Offer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Experience</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Blog</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#">Marco Polo Club</a>
             </li>
           </ul>
         </div>
@@ -165,7 +171,8 @@
    <div class="row">
     <div style="text-align:left;padding-left:30px;" class="col-md-6">
     <h5 >Select departing flight</h5>
-    From<b> {{city}}</b> to <b> {{city1}}</b> <span>{{dates.out}}</span>
+    From <b> <i class="fas fa-arrow-right"> </i> {{city}}</b> to <b><i class="fas fa-arrow-right"></i> {{city1}}</b>
+  <span> <i class="fas fa-calendar-week"></i>{{dates.out}}</span>
     </div>
     <div class="col-md-6">
     </div>
@@ -192,19 +199,20 @@
             <div class="col-md-3  pb-2">
               <div class="card" style="color: #000000; border-radius: 30px">
                 <div class="card-body ">
-                  <div class="d-flex">
-                    <p class="flex-grow-1">Morning</p>               
-                  </div>
+                 
                   
                   <div class="d-flex flex-column text-center mt-5 mb-4">
-                  
+                     <p class="flex-grow-1">Morning</p> 
                     <p
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
                       {{temp1}}&deg;
                     </p>          
-                    <span class="small" style="color: #868b94"></span>
+                       <span class="small" > <img
+                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        width="40px"
+                      /></span>
                   </div>
                   <div class="d-flex align-items-center">
                     <div class="flex-grow-1" style="font-size: 1rem">          
@@ -213,12 +221,7 @@
                         <span class="ms-1"> {{chanceOfRain}}% </span>
                       </div>   
                     </div>
-                    <div>
-                      <img
-                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
-                        width="40px"
-                      />
-                    </div>
+                   
                   </div>
                 </div>
               </div>
@@ -228,17 +231,19 @@
               <div class="col-md-3  pb-2">
               <div class="card" style="color: #000000; border-radius: 30px">
                 <div class="card-body ">
-                  <div class="d-flex">
-                    <p class="flex-grow-1">Afternoon</p>               
-                  </div>
+                
                   <div class="d-flex flex-column text-center mt-5 mb-4">
+                      <p class="flex-grow-1">Afternoon</p> 
                     <p
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
                      {{temp2}}&deg;
                     </p>          
-                    <span class="small" style="color: #868b94"></span>
+                        <span class="small" > <img
+                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        width="40px"
+                      /></span>
                   </div>
                   <div class="d-flex align-items-center">
                     <div class="flex-grow-1" style="font-size: 1rem">          
@@ -248,10 +253,7 @@
                       </div>   
                     </div>
                     <div>
-                      <img
-                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
-                        width="40px"
-                      />
+                      
                     </div>
                   </div>
                 </div>
@@ -261,17 +263,19 @@
                <div class="col-md-3  pb-2">
               <div class="card" style="color: #000000; border-radius: 30px">
                 <div class="card-body ">
-                  <div class="d-flex">
-                    <p class="flex-grow-1">Evening</p>               
-                  </div>
+                  
                   <div class="d-flex flex-column text-center mt-5 mb-4">
+                    <p class="flex-grow-1">Evening</p>  
                     <p
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
                        {{temp3}}&deg;
                     </p>          
-                    <span class="small" style="color: #868b94"></span>
+                      <span class="small" > <img
+                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        width="40px"
+                      /></span>
                   </div>
                   <div class="d-flex align-items-center">
                     <div class="flex-grow-1" style="font-size: 1rem">          
@@ -281,10 +285,7 @@
                       </div>   
                     </div>
                     <div>
-                      <img
-                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
-                        width="40px"
-                      />
+                     
                     </div>
                   </div>
                 </div>
@@ -295,17 +296,21 @@
             <div class="col-md-3  pb-2">
               <div class="card" style="color: #000000; border-radius: 30px">
                 <div class="card-body ">
-                  <div class="d-flex">
-                    <p class="flex-grow-1">Overnight</p>               
-                  </div>
+                
+                                 
+                
                   <div class="d-flex flex-column text-center mt-5 mb-4">
+                   <p class="flex-grow-1">Overnight</p> 
                     <p
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
                       {{temp4}}&deg;
                     </p>          
-                    <span class="small" style="color: #868b94"></span>
+                       <span class="small" > <img
+                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        width="40px"
+                      /></span>
                   </div>
                   <div class="d-flex align-items-center">
                     <div class="flex-grow-1" style="font-size: 1rem">          
@@ -315,10 +320,7 @@
                       </div>   
                     </div>
                     <div>
-                      <img
-                       src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
-                        width="40px"
-                      />
+                  
                     </div>
                   </div>
                 </div>
@@ -351,19 +353,20 @@
             <div class="col-md-3  pb-2">
               <div class="card" style="color: #000000; border-radius: 30px">
                 <div class="card-body ">
-                  <div class="d-flex">
-                    <p class="flex-grow-1">Morning</p>               
-                  </div>
+                 
                   
                   <div class="d-flex flex-column text-center mt-5 mb-4">
-                  
+                     <p class="flex-grow-1">Morning</p> 
                     <p
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
                       {{temp1}}&deg;
                     </p>          
-                    <span class="small" style="color: #868b94"></span>
+                       <span class="small" > <img
+                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        width="40px"
+                      /></span>
                   </div>
                   <div class="d-flex align-items-center">
                     <div class="flex-grow-1" style="font-size: 1rem">          
@@ -372,12 +375,7 @@
                         <span class="ms-1"> {{chanceOfRain}}% </span>
                       </div>   
                     </div>
-                    <div>
-                      <img
-                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
-                        width="40px"
-                      />
-                    </div>
+                   
                   </div>
                 </div>
               </div>
@@ -387,17 +385,19 @@
               <div class="col-md-3  pb-2">
               <div class="card" style="color: #000000; border-radius: 30px">
                 <div class="card-body ">
-                  <div class="d-flex">
-                    <p class="flex-grow-1">Afternoon</p>               
-                  </div>
+                
                   <div class="d-flex flex-column text-center mt-5 mb-4">
+                      <p class="flex-grow-1">Afternoon</p> 
                     <p
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
                      {{temp2}}&deg;
                     </p>          
-                    <span class="small" style="color: #868b94"></span>
+                        <span class="small" > <img
+                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        width="40px"
+                      /></span>
                   </div>
                   <div class="d-flex align-items-center">
                     <div class="flex-grow-1" style="font-size: 1rem">          
@@ -407,10 +407,7 @@
                       </div>   
                     </div>
                     <div>
-                      <img
-                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
-                        width="40px"
-                      />
+                      
                     </div>
                   </div>
                 </div>
@@ -420,17 +417,19 @@
                <div class="col-md-3  pb-2">
               <div class="card" style="color: #000000; border-radius: 30px">
                 <div class="card-body ">
-                  <div class="d-flex">
-                    <p class="flex-grow-1">Evening</p>               
-                  </div>
+                  
                   <div class="d-flex flex-column text-center mt-5 mb-4">
+                    <p class="flex-grow-1">Evening</p>  
                     <p
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
                        {{temp3}}&deg;
                     </p>          
-                    <span class="small" style="color: #868b94"></span>
+                      <span class="small" > <img
+                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        width="40px"
+                      /></span>
                   </div>
                   <div class="d-flex align-items-center">
                     <div class="flex-grow-1" style="font-size: 1rem">          
@@ -440,10 +439,7 @@
                       </div>   
                     </div>
                     <div>
-                      <img
-                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
-                        width="40px"
-                      />
+                     
                     </div>
                   </div>
                 </div>
@@ -454,17 +450,21 @@
             <div class="col-md-3  pb-2">
               <div class="card" style="color: #000000; border-radius: 30px">
                 <div class="card-body ">
-                  <div class="d-flex">
-                    <p class="flex-grow-1">Overnight</p>               
-                  </div>
+                
+                                 
+                
                   <div class="d-flex flex-column text-center mt-5 mb-4">
+                   <p class="flex-grow-1">Overnight</p> 
                     <p
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
                       {{temp4}}&deg;
                     </p>          
-                    <span class="small" style="color: #868b94"></span>
+                       <span class="small" > <img
+                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        width="40px"
+                      /></span>
                   </div>
                   <div class="d-flex align-items-center">
                     <div class="flex-grow-1" style="font-size: 1rem">          
@@ -474,10 +474,7 @@
                       </div>   
                     </div>
                     <div>
-                      <img
-                       src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
-                        width="40px"
-                      />
+                  
                     </div>
                   </div>
                 </div>
@@ -675,8 +672,8 @@
             <div >  
             
               <span></span><br>
-              <span>{{flightdata.time1.end}} </i><br>
-              <span>{{flightdata.to}}</span>
+              <span>{{flightdata.flightnumber}} </i><br>
+              
               </span>
             </div>
           </div>
@@ -685,9 +682,9 @@
           <div class=" col-md-6" >
             <div >        
             
-              <span></span><br>
-             <span>{{flightdata.time1.end}} </i><br>
-              <span>{{flightdata.to}}</span>
+              <br><br>
+             <span>{{flightdata.flightnumber}} </i><br>
+            
               </span>
             </div>
           </div>
@@ -696,9 +693,9 @@
           <div class="col-md-6">
             <div>
 
-              <span></span><br>
-             <span>{{flightdata.time1.start}} </i><br>
-              <span>{{flightdata.to}}</span>
+             <br><br><br>
+             <span>{{flightdata.flightnumber}} </i><br>
+             
               </span>
             </div>
           </div>
@@ -896,10 +893,10 @@ export default {
       iata: "Select",
       iata1: "Select",
       hours: "",
-      temp1:"13.05",
-      temp2:"15.01",
-      temp3:"12.04",
-      temp4:"10.07",
+      temp1:"0",
+      temp2:"0",
+      temp3:"0",
+      temp4:"0",
       leaves: [],
       destinations: [],
       dates: {
