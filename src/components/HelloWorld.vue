@@ -50,6 +50,12 @@
     </div>
   <div class="container-flex">
     <div id="booking" class="section">
+    <div class="row">
+  <div class="col-md-12"> 
+  <p style="text-align:left; padding-left:80px"> <b> <i class="fas fa-info-circle"></i> 2 latest update </b>View the latest Covid-19 restrictions and quarentine reqirements and more</p>
+  </div>
+  </div>
+  <br/>
         <div class="section-center">
             <div class="container">
                 <div class="row">
@@ -167,16 +173,18 @@
     
 
    <!-- weather data -->
+   <br>
    <div class="container-flex">
    <div class="row">
     <div style="text-align:left;padding-left:30px;" class="col-md-6">
-    <h5 >Select departing flight</h5>
-    From <b> <i class="fas fa-arrow-right"> </i> {{city}}</b> to <b><i class="fas fa-arrow-right"></i> {{city1}}</b>
-  <span> <i class="fas fa-calendar-week"></i>{{dates.out}}</span>
+    <h5 > <b>Select departing flight:</b></h5>
+    From <b> <i class="fas fa-arrow-right"> </i> {{city}}</b> to <b> <i class="fas fa-arrow-right"> </i> {{city1}}</b>
+  <span> <i class="fas fa-calendar-week"></i> {{dates.out}}</span>
     </div>
     <div class="col-md-6">
     </div>
    </div>
+   <br>
    <div class="row"> 
     <div class="col-md-6">
     <section class="" style="background-color: rgb(242, 242, 242)">
@@ -575,6 +583,26 @@
         </div>
     </div>
 <!--json part-->
+<br>
+<div class="row">
+<div class="col-md-6">
+<div class="row">
+
+<div class="col-md-3">
+<h6>Sort By</h6>
+</div>
+<div class="col-md-3">
+<u>Recommended</u>
+</div>
+<div class="col-md-3">
+<p>Departure Time</p>
+</div>
+<div class="col-md-3">
+<p>Arrival time</p>
+</div>
+</div>
+</div>
+</div>
 <div class="container-flex">
 <div class="row">
 <div class="col-md-6">
@@ -592,8 +620,8 @@
             <div >  
             
               <span></span><br>
-              <span>{{flightdata.time1.start}} </i><br>
-              <span>{{flightdata.from}}</span>
+              <span>{{flightdata.time1.start}} <br>
+              <span>{{flightdata.from}} <i class="fas fa-plane"></i></span>
               </span>
             </div>
           </div>
@@ -604,7 +632,7 @@
             
               <span></span><br>
              <span>{{flightdata.time1.start}} </i><br>
-              <span>{{flightdata.from}}</span>
+              <span>{{flightdata.from}}<i class="fas fa-plane"></i></span>
               </span>
             </div>
           </div>
@@ -615,7 +643,7 @@
              
               <span></span><br>
              <span>{{flightdata.time1.start}} </i><br>
-              <span>{{flightdata.from}}</span>
+              <span>{{flightdata.from}}<i class="fas fa-plane"></i></span>
               </span>
             </div>
           </div>
@@ -633,7 +661,7 @@
             
               <span></span><br>
               <span>{{flightdata.time1.end}} </i><br>
-              <span>{{flightdata.to}}</span>
+              <span><i class="fas fa-plane"></i>{{flightdata.to}}</span>
               </span>
             </div>
           </div>
@@ -644,7 +672,7 @@
             
               <span></span><br>
              <span>{{flightdata.time1.end}} </i><br>
-              <span>{{flightdata.to}}</span>
+              <span> <i class="fas fa-plane"></i>{{flightdata.to}}</span>
               </span>
             </div>
           </div>
@@ -655,7 +683,7 @@
 
               <span></span><br>
              <span>{{flightdata.time1.end}} </i><br>
-              <span>{{flightdata.to}}</span>
+              <span> <i class="fas fa-plane"></i>{{flightdata.to}}</span>
               </span>
             </div>
           </div>
@@ -703,6 +731,7 @@
       </div>
     </div>
 </div>
+
 <div class="col-md-6">
     <div class="row ">
       <div class="col-md-6" style="text-align: center">
