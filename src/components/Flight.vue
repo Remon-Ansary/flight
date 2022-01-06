@@ -661,7 +661,7 @@
             
               <span></span><br>
               <span>{{flightdata.time1.end}} </i><br>
-              <span><i class="fas fa-plane"></i>{{flightdata.to}}</span>
+              <span><i class="fas fa-plane"></i>{{  iata1}}</span>
               </span>
             </div>
           </div>
@@ -672,7 +672,7 @@
             
               <span></span><br>
              <span>{{flightdata.time1.end}} </i><br>
-              <span> <i class="fas fa-plane"></i>{{flightdata.to}}</span>
+              <span> <i class="fas fa-plane"></i>{{  iata1}}</span>
               </span>
             </div>
           </div>
@@ -683,7 +683,7 @@
 
               <span></span><br>
              <span>{{flightdata.time1.end}} </i><br>
-              <span> <i class="fas fa-plane"></i>{{flightdata.to}}</span>
+              <span> <i class="fas fa-plane"></i>{{  iata1}}</span>
               </span>
             </div>
           </div>
