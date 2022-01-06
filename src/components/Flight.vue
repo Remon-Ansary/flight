@@ -193,7 +193,7 @@
         <div class="row d-flex justify-content-left align-items-center h-100">
           <div class="row">
             <div class="wrapper">
-              <div class="typing-demo"><b>{{dates.out}}</b>  Forecast For  <b>{{city}}</b><b>, {{iata}}</b></div>
+              <div class="typing-demo"><b>{{dates.in}}</b>  Forecast For  <b>{{city}}</b><b>, {{iata}}</b></div>
             </div>
             <br />
              <br />
