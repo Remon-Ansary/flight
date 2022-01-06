@@ -1,30 +1,29 @@
-# flight
+# Flight - A Vue JS Assignment
+
+## After cloning the project please follow the following steps:
+
+## Build Setup
+* npm install
+* npm run dev
+
+## Tools used
+* HTML5 
+* CSS3
+* JavaScript
+* Vue JS
+
+## API used
+https://rapidapi.com/weatherapi/api/weatherapi-com/  https://api.sharetrip.net/api/v1/flight/search/airport?name=Vancouver
+
+# Packages used
+* axios
+* vue-hotel-datepicker
+
 
 > A Vue.js project
 
-## Build Setup
 
-``` bash
-# install dependencies
-npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
