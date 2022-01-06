@@ -588,7 +588,7 @@
 <div class="col-md-6">
 <div class="row">
 
-<div class="col-md-3">
+<div style="padding-left:30px" class="col-md-3">
 <h6>Sort By</h6>
 </div>
 <div class="col-md-3">
