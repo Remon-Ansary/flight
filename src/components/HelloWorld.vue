@@ -162,6 +162,14 @@
 
    <!-- weather data -->
    <div class="container-flex">
+   <div class="row">
+    <div style="text-align:left;padding-left:30px;" class="col-md-6">
+    <h5 >Select departing flight</h5>
+    From<b> {{city}}</b> to <b> {{city1}}</b> <span>{{dates.out}}</span>
+    </div>
+    <div class="col-md-6">
+    </div>
+   </div>
    <div class="row"> 
     <div class="col-md-6">
     <section class="" style="background-color: rgb(242, 242, 242)">
@@ -169,9 +177,10 @@
         <div class="row d-flex justify-content-left align-items-center h-100">
           <div class="row">
             <div class="wrapper">
-              <div class="typing-demo">Weather data in <b>{{cityName}}</b></div>
+              <div class="typing-demo"><b>{{dates.out}}</b>  Forecast For  <b>{{city1}}</b><b>, {{iata1}}</b></div>
             </div>
             <br />
+             <br />
             <!-- hello -->
             <div class="row">
               <div class="col-md-4">
@@ -193,7 +202,7 @@
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                      {{temp1}}
+                      {{temp1}}&deg;
                     </p>          
                     <span class="small" style="color: #868b94"></span>
                   </div>
@@ -227,7 +236,7 @@
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                     {{temp2}}
+                     {{temp2}}&deg;
                     </p>          
                     <span class="small" style="color: #868b94"></span>
                   </div>
@@ -260,7 +269,7 @@
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                       {{temp3}}
+                       {{temp3}}&deg;
                     </p>          
                     <span class="small" style="color: #868b94"></span>
                   </div>
@@ -294,7 +303,7 @@
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                      {{temp4}}
+                      {{temp4}}&deg;
                     </p>          
                     <span class="small" style="color: #868b94"></span>
                   </div>
@@ -321,16 +330,16 @@
     </section>
     </div>
  
-    <div class="col-md-6"> 
-     <div class="container-flex">
+        <div class="col-md-6">
     <section class="" style="background-color: rgb(242, 242, 242)">
       <div class="container py-5 ">
         <div class="row d-flex justify-content-left align-items-center h-100">
           <div class="row">
             <div class="wrapper">
-              <div class="typing-demo">Weather data in <b>{{cityName}}</b></div>
+              <div class="typing-demo"><b>{{dates.out}}</b>  Forecast For  <b>{{city1}}</b><b>, {{iata1}}</b></div>
             </div>
             <br />
+             <br />
             <!-- hello -->
             <div class="row">
               <div class="col-md-4">
@@ -345,12 +354,14 @@
                   <div class="d-flex">
                     <p class="flex-grow-1">Morning</p>               
                   </div>
+                  
                   <div class="d-flex flex-column text-center mt-5 mb-4">
+                  
                     <p
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                      {{temp1}}
+                      {{temp1}}&deg;
                     </p>          
                     <span class="small" style="color: #868b94"></span>
                   </div>
@@ -363,7 +374,7 @@
                     </div>
                     <div>
                       <img
-                         src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
                         width="40px"
                       />
                     </div>
@@ -384,7 +395,7 @@
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                     {{temp2}}
+                     {{temp2}}&deg;
                     </p>          
                     <span class="small" style="color: #868b94"></span>
                   </div>
@@ -417,7 +428,7 @@
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                       {{temp3}}
+                       {{temp3}}&deg;
                     </p>          
                     <span class="small" style="color: #868b94"></span>
                   </div>
@@ -451,7 +462,7 @@
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                      {{temp4}}
+                      {{temp4}}&deg;
                     </p>          
                     <span class="small" style="color: #868b94"></span>
                   </div>
@@ -464,7 +475,7 @@
                     </div>
                     <div>
                       <img
-                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                       src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
                         width="40px"
                       />
                     </div>
@@ -476,7 +487,6 @@
         </div>
       </div>
     </section>
-    </div>
     </div>
    </div>
    </div>
@@ -574,7 +584,7 @@
     <div class="row ">
     </div>
     <div class="row ">
-      <div class="col-md-6" style="text-align: center">
+      <div class="col-md-4" style="text-align: center">
         <div class="row ">
           <div class=" col-md-6">
              
@@ -614,7 +624,7 @@
           </div>
         </div>
       </div>
-    <div class="col-md-6" style="text-align: center">
+    <div class="col-md-4" style="text-align: center">
         <div class="row ">
           <div class=" col-md-6">
              
@@ -645,9 +655,49 @@
         <div class="row ">
           <div class="col-md-6">
             <div>
-             
+
               <span></span><br>
-             <span>{{flightdata.time1.staendt}} </i><br>
+             <span>{{flightdata.time1.end}} </i><br>
+              <span>{{flightdata.to}}</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4" style="text-align: center">
+        <div class="row ">
+          <div class=" col-md-6">
+             
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-md-6" >
+            <div >  
+            
+              <span></span><br>
+              <span>{{flightdata.time1.end}} </i><br>
+              <span>{{flightdata.to}}</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row ">
+          <div class=" col-md-6" >
+            <div >        
+            
+              <span></span><br>
+             <span>{{flightdata.time1.end}} </i><br>
+              <span>{{flightdata.to}}</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-md-6">
+            <div>
+
+              <span></span><br>
+             <span>{{flightdata.time1.start}} </i><br>
               <span>{{flightdata.to}}</span>
               </span>
             </div>
@@ -660,8 +710,8 @@
     <div class="row ">
       <div class="col-md-6" style="text-align: center">
         <div class="row ">
-          <div class="col-md-12" style="background-color:rgb(9, 67, 124)">
-              <span class="fw-bold" style="color: white">Economy</span>
+          <div class="col-md-12" style="background-color:rgb(37, 115, 187)">
+              <span>Economy</span>
           </div>
         </div>
         <div class="row">
@@ -695,9 +745,8 @@
       </div>
       <div class="col-md-6" style="text-align: center">
         <div class="row ">
-          <div class="col-md-12" style="background-color:steelblue">
-           
-              <span class="fw-bold" style="color: white">Premium Economy</span>
+          <div class="col-md-12" style="background-color:LightCoral">
+              <span >Premium Economy</span>
           </div>
         </div>
         <div class="row">
@@ -838,10 +887,10 @@ export default {
   data: function() {
     return {
       flightdata: flightdata,
-      chanceOfRain: "",
+      chanceOfRain: "0",
       leaveName: "",
       destinationName: "",
-      cityName: "China",
+      cityName: "Dhaka",
       city: "Departure",
       city1: "Destination",
       iata: "Select",
@@ -914,14 +963,17 @@ export default {
       console.log(endDate);
     },
     getWeather(){
-      axios
-        .get(
-           "http://api.weatherapi.com/v1/forecast.json?key=eb7d27b37d204bbbb2241423213112&q=" +
-          this.city1 +
-          "&dt=" +
-          this.dates.out         
-           
-        )
+      var options = {
+  method: 'GET',
+  url: 'https://weatherapi-com.p.rapidapi.com/forecast.json',
+  params: {q: this.city1, days: '14', dt: this.dates.out},
+  headers: {
+    'x-rapidapi-host': 'weatherapi-com.p.rapidapi.com',
+    'x-rapidapi-key': '9b2bc1d5edmsheaa734db28b42abp1bafd8jsn9d1a768758f9'
+  }
+};
+
+axios.request(options)
         .then(res => {
           // console.log(res.data.forecast.forecastday[0].hour[0].cloud);
           this.hours = res.data.forecast.forecastday[0].hour;

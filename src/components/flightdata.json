@@ -2,6 +2,7 @@
   "date": "2022-01-08",
   "from": "HKG",
   "to":"LAS",
+  "flightnumber":"CX880>CX7906",
   "economy": {
     "price1": "HKD12,524",
     "price2": "HKD16,378",
