@@ -199,11 +199,9 @@
              <br />
             <!-- hello -->
             <div class="row">
-              <div class="col-md-4">
-              
+              <div class="col-md-4">   
               </div>
             </div>
-
             <!-- card1 -->
             <div class="col-md-3  pb-2">
               <div class="card" style="color: #000000; border-radius: 30px">
@@ -235,7 +233,6 @@
                 </div>
               </div>
             </div>
-
             <!-- card2 -->
               <div class="col-md-3  pb-2">
               <div class="card" style="color: #000000; border-radius: 30px">
@@ -250,7 +247,7 @@
                      {{temp22}}&deg;
                     </p>          
                         <span class="small" > <img
-                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        src="https://i.ibb.co/cwvYbwj/afternoon.png"
                         width="40px"
                       /></span>
                   </div>
@@ -282,7 +279,7 @@
                        {{temp32}}&deg;
                     </p>          
                       <span class="small" > <img
-                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        src="https://i.ibb.co/ZV3ThqQ/evening.png"
                         width="40px"
                       /></span>
                   </div>
@@ -315,7 +312,7 @@
                       {{temp42}}&deg;
                     </p>          
                        <span class="small" > <img
-                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        src="https://i.ibb.co/WKkt1Y5/night.png"
                         width="40px"
                       /></span>
                   </div>
@@ -401,7 +398,7 @@
                      {{temp2}}&deg;
                     </p>          
                         <span class="small" > <img
-                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                        src="https://i.ibb.co/cwvYbwj/afternoon.png"
                         width="40px"
                       /></span>
                   </div>
@@ -433,7 +430,7 @@
                        {{temp3}}&deg;
                     </p>          
                       <span class="small" > <img
-                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                          src="https://i.ibb.co/ZV3ThqQ/evening.png"
                         width="40px"
                       /></span>
                   </div>
@@ -468,7 +465,7 @@
                       {{temp4}}&deg;
                     </p>          
                        <span class="small" > <img
-                        src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
+                            src="https://i.ibb.co/WKkt1Y5/night.png"
                         width="40px"
                       /></span>
                   </div>
@@ -509,17 +506,19 @@
                 </div>
                 <div class="modal-body mx-3">
                     <div class="md-form mb-5">
+                     <label data-error="wrong" data-success="right" for="defaultForm-email">Leaving from
+                        </label>
                         <input type="text" v-model="leaveName" @input="getUser" id="defaultForm-email"
                             class="form-control validate" />
 
-                        <label data-error="wrong" data-success="right" for="defaultForm-email">Leaving from
-                        </label>
+                       
                     </div>
 
                     <div class="md-form mb-4">
+                      <label data-error="wrong" data-success="right" for="defaultForm-pass">Going to</label>
                         <input type="text" v-model="destinationName" @input="getDestination" id="defaultForm-email"
                             class="form-control validate" />
-                        <label data-error="wrong" data-success="right" for="defaultForm-pass">Going to</label>
+                      
                     </div>
                     <div>
                         <!-- Filter by input text to only show the matching results -->
