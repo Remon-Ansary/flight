@@ -33,18 +33,18 @@ A flight search application that allows users to search for flights based on the
 ### Step 1:
 
 Select departure and destination
-!["upper portion"](https://i.ibb.co/X505FKy/departure1.png)
+!["upper portion"](https://i.ibb.co/ZcczP4h/gitcity.png)
 
 ### Step 2:
 
 Select date
 
-!["upper portion"](https://i.ibb.co/xL1CbdR/dateselect.png)
+!["upper portion"](https://i.ibb.co/1M88t1k/gitdate.png)
 
 ## Screenshots
 
 This is the first screen of the website.
-!["upper portion"](https://i.ibb.co/tZCW84B/1stpart.png)
+!["upper portion"](https://i.ibb.co/hs49sTr/gitfirst.png)
 
 This is the second screen of the website.
-!["upper portion"](https://i.ibb.co/644nx77/2ndpart.png)
+!["upper portion"](https://i.ibb.co/dK76ykx/gitsecond.png)
