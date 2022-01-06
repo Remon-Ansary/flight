@@ -26,7 +26,8 @@
 
 ## Project Description
 
-A flight search application that allows users to search for flights based on their destination and departure date.This app shows the weather data of the destination place at the destination time.
+A flight search application that allows users to search for flights.
+It also shows the weather conditions of the departure and returning date.
 
 ## Project Details
 
