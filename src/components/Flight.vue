@@ -735,7 +735,7 @@
       <div class="col-md-6" style="text-align: center">
         <div class="row ">
           <div class="col-md-12" style="background-color:rgb(37, 115, 187)">
-              <span>Economy</span>
+              <span style="color:white">Economy</span>
           </div>
         </div>
         <div class="row">
@@ -1013,7 +1013,7 @@ axios.request(options)
           // console.log(res.data.forecast.forecastday[0].hour[0].cloud);
           this.hours = res.data.forecast.forecastday[0].hour;
           this.chanceOfRain = res.data.forecast.forecastday[0].day.daily_chance_of_rain;
-          console.log('rain'+this.chanceOfRain);
+         // console.log('rain'+this.chanceOfRain);
     
           this.weather = res.data;
           this.cityName = res.data.location.name;
@@ -1035,7 +1035,7 @@ axios.request(options)
       this.temp2 = (t2/6).toFixed(2);
       this.temp3 = (t3/6).toFixed(2);
       this.temp4 = (t4/6).toFixed(2); 
-      console.log(this.temp1);
+     // console.log(this.temp1);
         
         }
         )
@@ -1060,7 +1060,7 @@ axios.request(options2)
           // console.log(res.data.forecast.forecastday[0].hour[0].cloud);
           this.hours2 = res.data.forecast.forecastday[0].hour;
           this.chanceOfRain2 = res.data.forecast.forecastday[0].day.daily_chance_of_rain;
-          console.log('rain'+this.chanceOfRain);
+          //console.log('rain'+this.chanceOfRain);
          // console.log(this.hours);
           this.weather2 = res.data;
           this.cityName2 = res.data.location.name;
@@ -1082,7 +1082,7 @@ axios.request(options2)
       this.temp22 = (t22/6).toFixed(2);
       this.temp32 = (t32/6).toFixed(2);
       this.temp42 = (t42/6).toFixed(2); 
-      console.log(this.temp12);
+     // console.log(this.temp12);
         
         }
         )
