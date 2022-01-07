@@ -175,7 +175,7 @@
    <!-- weather data -->
    <br>
    <div class="container-flex">
-   <div class="row" style="background-color:Gainsboro">
+   <div class="row">
     <div style="text-align:left;padding-left:30px;" class="col-md-6">
     <h5 > <b> <card style="color:DarkCyan">Select departing flight:</card></b></h5>
     From <b style="color:DarkCyan"> <i class="fas fa-arrow-right"> </i> {{city}}</b> to <b style="color:DarkCyan"> <i class="fas fa-arrow-right"> </i> {{city1}}</b>
