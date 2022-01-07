@@ -599,7 +599,7 @@
 </div>
 </div>
 <div class="row">
-<p style="padding-left:30px"><b>3</b>  Flights Found &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">Filter <i class="fas fa-caret-down"></i></span>  </p>
+<p style="padding-left:30px"><b>5</b>  Flights Found &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue"><b>Filter</b> <i class="fas fa-caret-down"></i></span>  </p>
 </div>
 <div class="container-flex">
 <div class="row">
