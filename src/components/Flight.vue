@@ -177,9 +177,9 @@
    <div class="container-flex">
    <div class="row">
     <div style="text-align:left;padding-left:30px;" class="col-md-6">
-    <h5 > <b>Select departing flight:</b></h5>
-    From <b> <i class="fas fa-arrow-right"> </i> {{city}}</b> to <b> <i class="fas fa-arrow-right"> </i> {{city1}}</b>
-  <span> <i class="fas fa-calendar-week"></i> {{dates.out}}</span>
+    <h5 > <b> <card style="color:DarkCyan">Select departing flight:</card></b></h5>
+    From <b style="color:DarkCyan"> <i class="fas fa-arrow-right"> </i> {{city}}</b> to <b style="color:DarkCyan"> <i class="fas fa-arrow-right"> </i> {{city1}}</b>
+  <span > <i  class="fas fa-calendar-week"></i> {{dates.out}}</span>
     </div>
     <div class="col-md-6">
     </div>
@@ -188,7 +188,7 @@
    <div class="row"> 
    
      <div class="col-md-6">
-    <section class="" style="background-color: rgb(242, 242, 242)">
+    <section class="" style="background-color: ">
       <div class="container py-5 ">
         <div class="row d-flex justify-content-left align-items-center h-100">
           <div class="row">
@@ -336,7 +336,7 @@
     </section>
     </div>
          <div class="col-md-6">
-    <section class="" style="background-color: rgb(242, 242, 242)">
+    <section class="" style="background-color: ">
       <div class="container py-5 ">
         <div class="row d-flex justify-content-left align-items-center h-100">
           <div class="row">
@@ -599,7 +599,7 @@
 </div>
 </div>
 <div class="row">
-<p style="padding-left:30px"><b>5</b>  Flights Found &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue"><b>Filter</b> <i class="fas fa-caret-down"></i></span>  </p>
+<p style="padding-left:30px"><b>5</b>  Flights Found &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue"><b>Filter <select></select></b> <i cass="fas fa-caret-down"></i></span>  </p>
 </div>
 <div class="container-flex">
 <div class="row">
@@ -743,7 +743,7 @@
             <div>
               <span>From</span><br>
               <span>{{flightdata.premium.price1}}</span><br>
-              <span >View fare   <i class="fas fa-caret-down"></i></span>
+              <span >View fare <i class="fas fa-caret-down"></i></span>
             </div>
           </div>
         </div>
