@@ -28,8 +28,8 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
+              <a class="active nav-link "  style="color:blue"href="#"
+                ><u>Home</u>  <span active class=" sr-only" style="color:blue"></span></a
               >
             </li>
             <li class="nav-item">
@@ -364,7 +364,7 @@
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                      {{temp1}}&deg;
+                      {{temp1}} &deg;
                     </p>          
                        <span class="small" > <img
                         src="https://i.ibb.co/FbVyxTV/weather-icon-png-2.png"
@@ -375,7 +375,7 @@
                     <div class="flex-grow-1" style="font-size: 1rem">          
                       <div>
                         <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
-                        <span class="ms-1"> {{chanceOfRain}}% </span>
+                        <span class="ms-1"> {{chanceOfRain}} % </span>
                       </div>   
                     </div>
                    
@@ -395,7 +395,7 @@
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                     {{temp2}}&deg;
+                     {{temp2}} &deg;
                     </p>          
                         <span class="small" > <img
                         src="https://i.ibb.co/cwvYbwj/afternoon.png"
@@ -406,7 +406,7 @@
                     <div class="flex-grow-1" style="font-size: 1rem">          
                       <div>
                         <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
-                        <span class="ms-1"> {{chanceOfRain}}%  </span>
+                        <span class="ms-1"> {{chanceOfRain}} %  </span>
                       </div>   
                     </div>
                     <div>
@@ -427,7 +427,7 @@
                       class="display-8 mb-0 font-weight-bold "
                       style="color: #1c2331"
                     >
-                       {{temp3}}&deg;
+                       {{temp3}} &deg;
                     </p>          
                       <span class="small" > <img
                           src="https://i.ibb.co/ZV3ThqQ/evening.png"
@@ -491,7 +491,7 @@
    </div>
    </div>
      
-    <!-- modal return go -->
+    <!-- modal for return -->
     <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -509,8 +509,7 @@
                      <label data-error="wrong" data-success="right" for="defaultForm-email">Leaving from
                         </label>
                         <input type="text" v-model="leaveName" @input="getUser" id="defaultForm-email"
-                            class="form-control validate" />
-
+                            class="form-control" />
                        
                     </div>
 
@@ -521,12 +520,12 @@
                       
                     </div>
                     <div>
-                        <!-- Filter by input text to only show the matching results -->
+                     
 
                         <div v-for="leave in leaves">
                             <div v-if="leaves.length > 0">
                                 <div class="p-2" :key="leave.id">
-                                    <p @click="setState(leave)">
+                                    <p @click="setLeavedata(leave)">
                                         {{ leave.city }} - {{ leave.name }}
                                     </p>
                                 </div>
@@ -584,7 +583,6 @@
 <div class="row">
 <div class="col-md-6">
 <div class="row">
-
 <div style="padding-left:30px" class="col-md-3">
 <h6>Sort By:</h6>
 </div>
@@ -975,7 +973,7 @@ export default {
         });
     },
     
-    setState(leave) {
+    setLeavedata(leave) {
       console.log(leave);
       this.leaveName = leave.name;
       this.city = leave.city;
